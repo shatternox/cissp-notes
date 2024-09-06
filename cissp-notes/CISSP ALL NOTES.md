@@ -34,11 +34,14 @@ CIA Triad harus dibalance sesuai kebutuhan.
 
 Opposite of CIA Triad. The DAD Triad (**Disclosure, Alteration, and Destruction**).
 ![[Pasted image 20240904001235.png]]
-Disclosure --> Someone not authorized getting access to your information.
-Alteration --> Your data has been changed.
-Destruction --> Your data or system have been destroyed or rendered inaccessible.
+**Disclosure** --> Someone not authorized getting access to your information.
+**Alteration** --> Your data has been changed.
+**Destruction** --> Your data or system have been destroyed or rendered inaccessible.
 
-CIA Triad gk akan ditanya definisi, tapi lebih ke scenario dan susah. Jadi harus bener-bener paham.
+Pas Exam, CIA Triad gk akan ditanya definisi, tapi lebih ke scenario dan susah. Jadi harus bener-bener paham.
+
+
+
 
 
 
