@@ -41,12 +41,30 @@ Opposite of CIA Triad. The DAD Triad (**Disclosure, Alteration, and Destruction*
 Pas Exam, CIA Triad gk akan ditanya definisi, tapi lebih ke scenario dan susah. Jadi harus bener-bener paham.
 
 
+**IAAA (Identification, Authentication, Authorization, and Accountability)**
+![[Pasted image 20240908102637.png]]
 
+**MFA**
+--> Something you know, **password**, **pin**, etc.
+--> Something you have, **ID card**, **passport**, **smart card**, **browser cookie**, etc. 
+--> Something you are, **biometrics**, **fingerprint**. 
 
+![[{D0CA7143-C283-46E1-AED9-187EABDF6DB2}.png]]
+**Authorization** --> Access Control, IDOR, BOLA, RBAC
+**Accountability** --> Non Repudiation. Bukti kalau seseorang melakukan sesuatu.
 
+CISSP itu bukan soal absolute security. Tapi soal what best decision at that situation for the business.
 
+![[{5C543AF8-DE8F-462A-881C-3007C610BC4D}.png]]
 
+**Security Governance Principle.** 
+![[{9A7BA0BD-BE3A-420D-84A9-D99D5FF9F155}.png]]
+**Least Privilege and Need to Know** --> Penting
+**Non-Repudiation** --> Logging tuh bagian dari ini. 
 
+Pas exam itu bakal scenario, dan kita harus pilih jawaban **yang paling benar**. Bisa ada 2 jawaban. Tetapi ntar **ada 2 distraction answer juga**.
+
+**Digital Signature will provide Non-repudiation.**
 
 
 
