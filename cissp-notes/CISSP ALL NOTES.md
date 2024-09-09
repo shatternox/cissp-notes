@@ -66,6 +66,113 @@ Pas exam itu bakal scenario, dan kita harus pilih jawaban **yang paling benar**.
 
 **Digital Signature will provide Non-repudiation.**
 
+======================================
+
+**Management vs Governance**
+![[Pasted image 20240909110517.png]]
+
+--> Pas Exam, jawab dari POV yang exam mau (IT Security Manager / Risk Manager), bukan dari POV yang lu used to.
+
+![[Pasted image 20240909111210.png]]
+**Bottom-Up** --> IT Security is a nuisance. Tapi akan berubah ketika ada breach
+**Top-Down** --> Management dan BOD, support IT Security. (approach pas exam akan gini)
+
+CISO biasanya di bawah CTO, TAPI, **pas exam CISO di bawah CEO** langsung.
+
+CFO --> Chief Financial Officer. Important.
+
+### Governance Standards and Control Frameworks (Penting)
+![[Pasted image 20240909111805.png]]
+PCI-DSS --> Credit Card (Ada agar Credit Card tidak diregulasi Government. If we are good enough to regulate it, there's no need for government touch)
+OCTAVE --> Self Directed Risk Management
+
+COBIT --> Gold for the IT Organization. **Take what stakeholder needs and map it to our IT-related goals**. Have four domains.
+1. Plan and Organize
+2. Acquire and Implement
+3. Deliver and Support
+4. Monitor and Evaluate
+
+COSO --> Goals for **ENTIRE** organization. COBIT was developed from COSO, tapi dibikin specific for the IT Organization.
+
+ITIL --> IT Service Management. Set of frameworks and best practices that we use to align our IT services with the business' needs.
+
+FRAP --> Specific. One business unit, application, and system at a time.
+Roundtable brainstorm with **internal** employees. Impact analyzed, threats and risks are prioritized. Harus ada leadernya yang capable.
+
+**ISO 27000 Series**
+![[Pasted image 20240909123022.png]]
+
+**Defense in Depth**
+![[Pasted image 20240909123139.png]]
+
+### Legal and Regulatory Issues
+![[Pasted image 20240909124422.png]]
+**Bakal keluar exam:**
+- Criminal Law
+- Civil Law (Tort Law) --> Financial Fines
+- Administrative Law (Regilatory Law) --> HIPAA
+- Private Regulations --> PCI-DSS
+
+**Cuktau aja (Penting terutama di Indonesia):**
+Customary Law
+Religious Law
+
+![[Pasted image 20240909144421.png]]
+Liability:
+- Kalau kita memang bertanggung jawab misalnya untuk mensecure website dan terhack, kita liable. Kalau kita udah DD dan saran ke senior management, tapi mereka gk approve, dan terhack, mereka liable.
+
+Due Diligence (DD):
+- Researchnya before we implmenet something, proses checkingnya. How are we going to fix things.
+- ex: Prepare buat audit, pastikan semua sudah terimplemen dengan baik dan resource seperti uang dan waktu tersedia.
+
+Due Care (DC):
+- Implementasi hasil dari due diligencenya. Fixing the stuff.
+- ex: Actual auditnya
+
+Negligence (Lalai, tidak peduli, mengignore) --> Kalo kita mengignore risk yang tanggung jawab kita brati kita negligence dan bakal held liable.
+
+**Evidence**
+![[Pasted image 20240909145105.png]]
+Real Evidence -->  Fisiknya, HDD, USB, Server, dll. We can touch it.
+Direc Evidence --> They saw it, they experience it.
+Circumstantial Evidence --> To support other evidence. ex: Witness. Mobilnya penyok.
+Corroborative Evidence --> Not facts but can support other fact / evidence (?)
+
+**Hearsay**
+![[Pasted image 20240909154726.png]]
+
+**Evidence Type**
+![[Pasted image 20240909154802.png]]
+Secondary Evidence --> Hearsay
+
+**Reasonable Searches**
+![[Pasted image 20240909160956.png]]
+--> By default unreasonable search and seizure itu illegal by the US Government. **UNLESS, there's an immediate threat to human life or of evidence destruction.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
