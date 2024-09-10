@@ -147,31 +147,33 @@ Secondary Evidence --> Hearsay
 
 **Reasonable Searches**
 ![[Pasted image 20240909160956.png]]
---> By default unreasonable search and seizure itu illegal by the US Government. **UNLESS, there's an immediate threat to human life or of evidence destruction.**
+--> By default unreasonable search and seizure itu illegal by the US Government. **UNLESS, there's an immediate threat to human life or of evidence destruction.** In normal situation, harus ada search warrant.
 
+**Entrapment and Enticement**
+![[{8DEED465-EF4E-4093-AA03-D821BD005BDA}.png]]
+**Entrapment** --> Menjebak orang.
+**Enticement** --> Dia emng udh niat mau jahat, terus kita pancing lagi. Ex: Orang mau hack bank, kita sebagai admin sengaja buka port 22 tapi itu honeypot, supaya dia semakin napsu.
 
+**Intellectual Property**
+![[{326E7F91-F265-4934-BB3E-C30AC4F334F0}.png]]
+**Copyright** --> Kita gk harus apply. Automatically granted. Cara jagainnya pake watermark.
+**Trademarks** --> Kalo kita dah apply, kita bisa nuntut kalo ada orang yang berusaha make trademarks kita. e.g. for fake products, etc.
+**Patents** --> Cryptograpic algorithm can be patents. Kyk punya Sam.
+**Trade Secrets** --> Kalo dicuri gk ada legal backing. 
 
+**Attacks on IP**
+![[{339A2D3F-0272-40D8-83C6-85061DCC71E0}.png]]
+**Copyright, Trademarks, and Patents** kalo dipake tanpa izin bisa company tuntut, for money.
 
+**Cyber Squatting** --> Kalo dia sengaja beli domain yang tau kita akan pake buat ransom or hal jahat, or menjelek-jelekkan kita or seseorang itu **illegal**. Kalo krn kebetulan butuh yg sama, sah-sah aja.
 
+**Typo Squatting** --> Beli domain yg mirip dengan domain aslinya. Mostly illegal krn dipake for phishing biasanya. Depends dipake buat apa.
 
+Nerapin security controls itu harus mengacu pada business criticalitynya. Harus dari Highest business impact to lowest.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Privacy**
+![[{9FAAB99F-D999-4CC1-B7A0-E3CFE1AD3D7F}.png]]
+**Kita sebagai konsumen ataupun warga negara BERHAK untuk PII kita itu dirahasiakan / disimpan dengan baik.**
 
 
 
