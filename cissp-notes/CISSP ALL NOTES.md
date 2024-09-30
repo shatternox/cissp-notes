@@ -173,7 +173,285 @@ Nerapin security controls itu harus mengacu pada business criticalitynya. Harus 
 
 **Privacy**
 ![[{9FAAB99F-D999-4CC1-B7A0-E3CFE1AD3D7F}.png]]
-**Kita sebagai konsumen ataupun warga negara BERHAK untuk PII kita itu dirahasiakan / disimpan dengan baik.**
+**Kita sebagai konsumen ataupun warga negara BERHAK untuk PII kita itu dirahasiakan / disimpan dengan baik dan aman.**
+
+EU Law paling bener buat privasi dan PII. 
+
+PII --> Segala data apapun yang bisa merujuk ke seseorang. Even credit card number, biometrics, fullname, license, dll.
+
+#### **Rules, Regulations, and Laws you should know for the exam (US)**
+![[Pasted image 20240910104721.png]]
+![[Pasted image 20240910105548.png]]
+**HIPAA** --> for Health Insurance, Providers, Clearance House Agent.
+HIPAA has three rules: a **privacy rule, security rule, and breach notification rule**.
+
+**Privacy** - it is your right that your protected health information is kept private.
+**The security rule** - they have to implement appropriate security measures.
+**breach notification rule** - If they are breached, they need to let the public know.
+
+**Security Breach Notificaitons Law** --> Harus ngabarin ketika breach. Tapi kadang kalau data yang breached/leaked itu encrypted with a strong encryption, mereka gk ngabarin.
+
+**Electronic Communication Privacy Act (ECPA)** --> Old, protects against wiretapping.
+
+**PATRIOT Act of 2001** --> Drastically improves ECPA.
+
+**Computer Fraud and Abuse Act (CFAA) - Title 18 Section 1030** --> Cyber crime / Computer Crime paling banyak diarahkan ke sini. Karena mostly dipake buat Fraud.
+
+**Gramm-Leach-Billey Act (GLBA)** --> Financial Institution.
+
+**Sarbanes-Oxley Act of 2002 (SOX)** --> Accounting Scandals.
+
+**PCI-DSS** --> Credit Card
+
+#### **Rules, Regulations, and Laws you should know for the exam (EU)**
+![[Pasted image 20240910105808.png]]
+**General Data Protection Regulation (GDPR)** --> EU, Privacy, Fines.
+--> EU Privacy law is the best, krn proactive.
+--> Gk peduli lokasi perusahaannya, **KALAU customer kita ada yang dari EU, brati kita harus adhere to GDPR**.
+--> Kalo customernya orang EU tapi gk stay di EU, gk harus comply.
+--> Sangat agresif untuk mengejar company yg gk comply and besar finesnya. **Up to 20 Millios euro or 4% dari company revenue, which ever is greater**. Gila.
+
+![[Pasted image 20240910110401.png]]
+Data subject --> one of the individuals in the EU. Datanya gk boleh diproses unless ada legal basis to do so.
+
+**Harus ada some sort of randomization ketika memproses data sehingga even kalo usernya agree, bakal susah diidentify.**
+
+![[Pasted image 20240910110609.png]]
+Kalo ada **lawful interception, national security, military, police, justice system yang minta. Then and only then baru boleh datanya di unmasked**.
+
+Baca aja.
+
+**Sebagai perusahaan, cuma boleh collect data that we only needs**. Gk boleh lebih.
+
+**Company yang memproses dan monitoring data harus appoint/hire Data Protection Officers!**
+
+**Legacy EU Laws (Predecessor of GDPR, no longer used)**
+![[Pasted image 20240910111111.png]]
+
+#### **Rules, Regulations, and Laws you should know for the exam (International)**
+![[Pasted image 20240910131033.png]]
+**OECD** --> Guidelines, for protection and privacy and transborder flows of personal data.
+
+1. **Collection limitation principle** --> the collection of personal data should be limited,
+2. **Data quality principle** --> data should be complete, current and relevant for what it is being used for
+3. **Purpose specification principle** --> subjects need to be told why the data is being collected, the time that it is being collected, and that they only use it for whatever that purpose is.
+4. **Use limitation principle** --> states that only with the consent of the subject or by the authority of law can personal data be disclosed, made available or used for anything else other than what it was intended for.
+5. **Security safeguards principle** --> there should be reasonable safeguards in place to protect the data from loss, unauthorized access, modifications or disclosure.
+6. **Openness principle** --> any practices and policies in regards to the personal data has to be communicated openly, and then the subject should be able to easily establish the existence and nature of the personal data, its use, and the identity of the organization that has the data.
+7. **Individual participation principle** --> you should be able to find out which organizations have your data to make sure that you can correct any of the data that is wrong and be able to challenge any requests that are denied.
+8. **Accountability principle** -->  organizations are held accountable for complying with the measures that are stated in the other seven principles.
+
+**Wassenaar Arrangement** (Encryption, must have a good encryption)
+![[Pasted image 20240910131744.png]]
+
+PCI-DSS demands regular VA and Pentest
+
+"The first principle of the General Data Protection Regulation (GDPR) is '**Lawfulness**, **fairness** and **transparency**'.
+
+**3rd Party**
+![[Pasted image 20240910132307.png]]
+More aggressive the plan, more expensive it is.
+
+Before acquisitions, kita mesti assess dulu security standard mereka. Kalo gk on par sama our current security standard, jadiin separate entity aja.
+
+## **Ethics (PENTING BUAT EXAM)**
+![[Pasted image 20240910132649.png]]
+Kalo kita gk comply to Code of Ethicsnya, certifications kita akan direvoke.
+
+![[Pasted image 20240910132846.png]]
+
+**(Keluar di exam)**
+![[Pasted image 20240910132935.png]]
+
+### Information Security Governance
+![[Pasted image 20240910133312.png]]
+Setelah tau Values, Vision, dan Mission, baru kita bisa mikir strategic objectives dan actionsnya buat mencapai mission kita.
+
+**Strategic Objectives**
+![[Pasted image 20240910143539.png]]
+**Strategic Plan** --> CEO, BOD, Higher management
+**Tactical Plan** --> Kita di sini mostlikely, plannya lebih specific dan short term. Hiring, budgeting, training.
+**Operational Plan** --> Lebih detail dan spesific lagi on what to do on operational.
+
+
+**Policies, Standard, and Procedures (IMPORTANT FOR EXAM)**
+![[Pasted image 20240910151958.png]]
+
+**Policies are very high level.**
+And for the IT world, for us, that could mean patches, updates, strong encryption. But there's nothing specific.
+
+They're not specific and they fall into three categories.
+- **Regulatory**, rumah sakit harus comply ke HIPAA, perusahaan yang ada user EU harus comply ke GDPR, Bank harus PCI-DSS comply, etc. 
+- **Advisory**, the ones that outline what types of behaviors and activities that are either acceptable or not acceptable in our organization. In those types of policies, we would probably have some wording saying, *this is what happens if you do or do not follow the policy*. That could be our print policy, our acceptable use of Internet policy or our employment policies. We want our staff to clearly understand what is allowed and what is not allowed.
+- **Informational,** the ones that are just there to inform people. That could be a policy that talks about our values, our vision, our mission.
+
+**Standards (Mandatory)** --> Lebih detail dan specific.
+
+*True policies and standards are more important, but maybe look at it a little bit more as we use our policies to build our standards. Then with those standards, we can find the guidelines and through those guidelines we can make our procedures*.
+
+**Guideline (Non Mandatory)** --> Suggestion on how to implement it
+
+**Baselines (Benchmarks)** --> Minimum requirements
+
+**Procedures (Mandatory)** --> Low level, step by step guide to follow. Specific.
+
+If we can automate something, do it, so we dont fuck up.
+
+**Personnel Security (Human Aspect)**
+![[Pasted image 20240910153826.png]]
+Training dan practice lebih effective. Rather than seminar, mending gamification, **reward systems**, incentives, phishing simulation. It's better.
+
+Human harus terus-menerus ditraining, gk bisa sekali aja. Harus dibiasakan, dan dijadikan habit.
+
+**Background check** --> IMPORTANT, harus bener terutama buat remote employee, deepfake op. Inget kejadian Stepico. NDA juga.
+
+**Employee Termination / Offboarding** --> Harus secure, hati-hati ada revenge attack. Access harus diremove semua dengan hati-hati. Shut off the access. **Remember, LOCK THE ACCOUNT, but never delete it**. We might need it for something in the future.
+
+**Vendor, Contractor, and Consultant Security**
+![[Pasted image 20240910155752.png]]
+Vendor dan Outsource harus check. Hati-hati mereka leak informations.  
+
+### Access Controls
+![[Pasted image 20240910160220.png]]
+**Administrative (Directive Controls)** --> **Hiring (background check) and Firing people juga include ke sini**.
+**Technical Control** --> Logical Controls, firewall controls, how do we authenticate our staff, encryptions, etc.
+**Physical Controls** --> Gates, guards, access card, locks, bollards, mantrap, etc.
+
+#### **Access Control Types (SUSAH DAN KELUAR DI EXAM)**
+![[Pasted image 20240910160512.png]]
+Baca pertanyaannya bener-bener. Sesuain dengan situasinya. Karena even security guards bisa jadi Deterrent, bisa jadi Detective, or Compensating, etc. Gk ada yg selalu fixed.
+
+DAN Pas exam bahasnya bisa beda. Bisa jadi Preventative, tapi ditulisnya Blocking. Asal meaningnya sama gpp. That's why this is an english exam.
+
+*Also, keep in mind, this is an English exam. You might read through the entire question and all the options and you know, the answer should be something preventative. But they might use stop, or block, or avert and they may do that multiple times in a question you need to boil down, what are they exactly asking here? Even if the verbiage is not what you would expect, then you do the same with the answer options.*
+
+**Detective controls** --> Log, logging juga termasuk.
+**Corrective** --> Stop an attack or fix a problem. (antivirus, patches). 
+- Khusus buat **patches, kalo Corrective gk ada di pilihan jawaban, PILIH Preventative**.
+
+**Deterrent** --> Makes an attack less interesting, or less feasable.
+
+**Compensating** --> Compensate kalo controlsnya impossible to implement. or too costly to implement.
+
+### Risk Management - Identificaiton
+![[Pasted image 20240910161350.png]]
+**Risk = Threat * Vulnerability**
+- If there's a threat tapi no vulnerability, then there's no risk.
+- If there's a vulnerability but no threat, then there's no risk.
+- Both needs to be present.
+
+Risk Assessment itu process yang terus-menerus dan continuous.
+
+*What is in scope is just as important as what is out of scope.* 
+*What we're doing this risk assessment for? Is it for a single department? Is it*
+*the entire enterprise? What type of assets are we looking at? What type of threats?*
+
+**Rate yang paling critical dan paling likely diserang.**
+
+### Risk Management - Assessment
+![[Pasted image 20240910162605.png]]
+
+*We have identified the risks and now we do our qualitative and quantitative risk analysis.*
+*We do our risk register. And then we probably also do an uncertainty analysis, because even with the quantitative risk analysis, everything that we do here is really just our best guesses. We guess if this happens, then this is how bad it's going to be.*
+
+Kita bikin risk, kasih risknya ke senior management, then, it depends on them whether to act on it or not.
+
+After you put in a countermeasure, whatever risk is left over is the ***residual risk***. If that risk is still above our risk appetite, well, then we would do something else to either ***mitigate, transfer, accept, or avoid that risk***, which then brings us to risk transference. That is us transferring the risk to someone else.
+
+**Risk Mitigation** --> Dibenerin.
+**Transferring Risk** --> Insurance, Sharing risk (pake thirdparty partner).
+**Risk Acceptance** --> Kita udah check semua dan kalo gk worth, yodah terima aja.
+**Risk Avoidance** --> Stop whatever that's causing the risk. Matiin featurenya, etc.
+
+**Risk Rejection** --> NEVER AN OKAY OPTION. Kita tau the risk is there, but choose to ignore it tanpa adanya analisa.
+
+#### Risk Analysis
+![[Pasted image 20240910163432.png]]
+![[Pasted image 20240910163559.png]]
+If the residual risk is still to high, we keep going.
+
+![[Pasted image 20240910163656.png]]
+
+PHI --> Protected Health Information --> is any health information that includes any of the 18 elements identified by HIPAA
+
+![[Pasted image 20240910163841.png]]
+
+We do the qualitative analysis, to make sure that we work on the right things, the ones that are important. 
+
+We do the quantitative analysis to make sure we have enough protection for those things that are important.
+
+![[Pasted image 20240910164054.png]]
+ Quantitative Risk Analysis Example.
+ ![[Pasted image 20240910164211.png]]
+![[Pasted image 20240910164438.png]]
+
+--> NONTON LAGI, INI NGITUNGNYA HARUS NGERTI. (Risk Management- Assessment Part 2)
+
+![[Pasted image 20240910164851.png]]
+![[Pasted image 20240910165036.png]]
+
+#### KGIs, KPIs, and KRIs (Penting for exam)
+![[Pasted image 20240910165208.png]]
+**KGI** --> How well did we do compared to what we planned to do? Semacem kyk review. What went wrong, what can be improved (kalo gk mencapai target). Kuncinya adalah *after the fact*.
+
+**KPI** --> Measuring how well we are doing in one specific task and it has a direct correlation between the goals and the performance.
+
+**KRI** -->  Quantify and demonstrate the risks that the organization could be facing or how risky a certain activity is. Also used as an early warning system against risk.
+
+
+## Risk Management 
+![[Pasted image 20240923131444.png]]
+
+At this point, we have identified the risks, we have presented our assessments to senior management, now they get to choose how we respond.
+
+And remember, the only acceptable choices here are:
+- risk mitigation, 
+- risk transference, 
+- risk acceptance or 
+- risk avoidance.
+
+And what I'm hinting at here is **risk rejection is never OK**.
+
+![[Pasted image 20240924091444.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
