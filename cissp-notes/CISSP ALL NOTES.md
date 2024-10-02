@@ -414,19 +414,28 @@ And what I'm hinting at here is **risk rejection is never OK**.
 
 ![[Pasted image 20240924091444.png]]
 
+**Risk Management Maturity Model**
+![[{1BE52B35-6C8C-429E-A7F7-2DDF0479C89E}.png]]
+
+### RACI (Responsible, Accountable, Consulted, Informed)
+![[{B5BA65CC-DBAB-43C9-A41C-A25C4A5EA254}.png]]
+**Responsible** **(R)** --> Yang tanggung jawab nyelesain tasknya. Someone that's doing the work. Kyk staffnya.
+**Accountable** **(A)**  --> Yang merintah, yang approve or reject the work result. Kyk managernya.
+**Consulted (C)** --> Yang ngasih input sebelum kita bisa membuat decision. SME. Komunikasinya harus two way, harus dialog
+**Informed (I)** --> Orang yang harus diinfo terus mengenai progress. Komunikasinya searah aja, dari manager ke CISO misalnya. Just send them to the progress report.
+
+**RACI Chart Example**
+![[Pasted image 20241001234310.png]]
 
 
+# GRC - Governance, Risk Management, Compliance
+![[Pasted image 20241001234552.png]]
 
+The governance structure of our organization is the one that establishes our ethical, legal and procedural guidelines for all the activities we do within our organization, including compliance.
 
+## NIST 800-53 rev. 5 - Security and Privacy Controls for Information Systems and Organizations.
 
-
-
-
-
-
-
-
-
+![[Pasted image 20241002000329.png]]
 
 
 
