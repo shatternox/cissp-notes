@@ -436,6 +436,40 @@ The governance structure of our organization is the one that establishes our eth
 ## NIST 800-53 rev. 5 - Security and Privacy Controls for Information Systems and Organizations.
 
 ![[Pasted image 20241002000329.png]]
+**492 Pages**
+On the exam, there won't be a, "What is NIST 800-53 revision 5, control number SA-1?" **What you need to know is the high-level of the publication and then the usual why, when, where, how, what.**
+
+**What is NIST 800-53 rev. 5?**
+It presents us with a set of detailed security and privacy controls that primarily is intended for US federal systems, excluding the ones that are related to national security.
+
+![[{CE63F041-9979-47DE-8D8A-E0686973A32C}.png]]
+--> Baseline, bare minimum.
+
+What's new in rev. 5
+![[{972E6A65-D3A5-4524-A87B-21FC3AB121B7}.png]]
+--> Thirdparty and supply chain risk management
+--> Insider threat.
+
+## NIST 800-37 Rev. 1 and 2
+
+![[{B2CA11D2-67B4-4CAE-BC25-3FA04C6C3582}.png]]
+**NIST 800-53 and NIST 800-37 is closely tied together.**
+
+![[{B6B1D38B-7757-472F-9218-17DF5E19105F}.png]]
+
+*"We implement security throughout the entire lifecycle of any system or software, meaning security and privacy are requirements in the initial design and all the specifications we need for a certain piece of software. And when I say the entire lifecycle, that means from when we acquire the software **all the way until it is completely removed from all our systems.**"*
+
+![[{BC5997CF-0B37-45DC-8B87-A33FD4606F10}.png]]
+
+
+
+
+
+
+
+
+
+
 
 
 
