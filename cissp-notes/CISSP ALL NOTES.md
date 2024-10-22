@@ -461,6 +461,105 @@ What's new in rev. 5
 
 ![[{BC5997CF-0B37-45DC-8B87-A33FD4606F10}.png]]
 
+## Risk- Attackers and Types of Attacks
+![[{DA79D39A-EE2D-42F6-B462-C1A9DDB2C673}.png]]
+![[{03B52D5A-AD79-4D93-B432-6D71E709E6E5}.png]]
+![[{2A3B1F2A-8F7D-40AC-BCF5-B6B33A05D99A}.png]]
+Outsider --> Paling sering melakukan serangan tapi paling sering gagal.
+Insider --> Unlikely, but bahaya.
+
+![[{8CAE2BB1-AE58-41DC-8768-4D3DB66A29BE}.png]]
+![[{B6663829-91EA-40E2-9F2E-28FB98FC0E5D}.png]]
+
+C2 --> Bot Herders --> Botnets (1000 bots)
+
+![[{BC5F07C9-76AC-4001-B040-21A066AA3B6B}.png]]
+
+## Business Continuity Planning (BCP) - Penting for Exam
+
+![[{5972BB79-2DD9-4DB8-B246-A83AEC239EA7}.png]]
+--> Disaster Recovery Plan (DRP)
+--> Business Continuity Planning (BCP)
+
+Penting. JANGAN anggap tidak akan terjadi. Harus sedia plan besar dan sub plan - sub plannya, agar ketika disaster, kita sudah tau harus apa prosedurnya.
+
+What if? What if? What if? Identify semua gaps, scenario disaster, dan risknya.
+
+--> Earth Quake or Flooding --> Two Data Centres, di beda region.
+
+### BCP / DRP == NIST 800-34
+![[{55D48070-6F18-4F7B-96AC-F7B14E5D6C35}.png]]
+![[{7FD19C0C-97A1-4C44-AA99-6B3C9F6E770C}.png]]
+Senior management needs to be involved and know the process.
+
+### Business Impact Analysis (BIA), bagian dari BCP
+![[{8D72C921-7FD6-49E5-9853-5ACA016F7EE6}.png]]
+**RPO** (Recovery Point Objective) --> Acceptable amount of data that cannot be recovered
+**MTD** (Maximum Tolerable Downtime) --> Seberapa lama downtime maximumnya.
+**RTO** (Recovery Time Objective) -->Amount of time to restore the system 
+**WRT** (Work Recovery Time) --> How much time is required to configure the recovered system
+
+**MTD >= RTO + WRT**
+
+That said, just in case, also know that MTD can be called 
+- **Maximum Allowable Downtime - MAD** 
+- **Maximum Tolerable Outage - MTO**
+- **Maximum Acceptable Outage - MAO** or
+- **Maximum Tolerable Period of Disruption.**
+
+Just know all of these refer to the same thing.
+
+Our MTD is made up by two variables, RTO and WRT.
+
+![[{F23A07ED-B5C4-482D-A252-9EEACB114072}.png]]
+
+**MTBF** (Mean Time Between Failures)
+**MTTR** (Mean Time to Repair)
+**MOR** (Minimum Operating Requirements) --> Spec terendah agar critical function bisa jalan dulu.
+
+![[{173E7051-2781-4256-A482-522AB9DD49D0}.png]]
+
+First, let's start out by defining what we mean by external dependencies.
+
+**It is all the third-party services, suppliers, resources, that we need to maintain our normal operations.**
+
+That can be cloud service providers, Internet service providers, raw materials, even key customers whose business is essential to our company's success.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
