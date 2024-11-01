@@ -540,6 +540,107 @@ C/o punya multiple external dependencies. Kyk CDC pake Jumio dan Onfido
 
 
 # Domain 2
+![[Pasted image 20241101125857.png]]
+
+## Information Life Cycle
+![[Pasted image 20241101130013.png]]
+
+**Archiving vs Backup**
+Archiving --> us keeping a copy for future use, just in case we might need it. A data archive, we keep for as long as the data is useful.
+Backup -->  us taking a backup so we can restore the data. So a backup we keep to restore with. Over time they get less useful.
+
+### Three States of Data
+![[Pasted image 20241101130536.png]]
+**Data at Rest**
+	--> Backup tape, harus selalu being encrypted. Full disk ecryption.
+	--> Avoid CD/DVDs, encryption di situ easy to break.
+	**--> Bisa dienforce pake technical control**
+**Data in Motion**
+	--> Ecrypt the traffic. End2end ecryption.
+	**--> Bisa dienforce pake technical control**
+**Data in Use** (we are using the data, jadi gk bisa diencrypt)
+	--> Clean desk policy. Clean cyber securiyy practices. No shoulder surfing, locking laptop, etc.
+	**--> Mostly tidak bisa dienforce pake technical control. Harus training, awareness, dan administrative control kyk policy**
+	--> Palingan technical control yg bisa diimplement adalah, auto lock screen laptop after 1 minute. OR printer yang cuma bisa dipake kalo kita swipe keycard kita.
+
+### Data Classification Policies
+![[Pasted image 20241101131251.png]]
+![[Pasted image 20241101140402.png]]
+![[Pasted image 20241101140438.png]]
+
+### Data Handling, Data Storage, and Data Retention
+![[Pasted image 20241101140627.png]]
+
+--> Di ujian, anggap kita selalu punya loggin terhadap siapa yang mengakses data.
+
+MTD --> Maximum Tolerable Downtime.
+
+Yang boleh membawa tape buat backup itu harus license dan held liable kalo tapenya kenapa-kenapa ketika in transit.
+
+#### Retention
+![[Pasted image 20241101140951.png]]
+
+### Data, system, mission ownership, custodians and users
+![[Pasted image 20241101141253.png]]
+![[Pasted image 20241101141452.png]]
+
+### Memory and Data Remanence
+![[Pasted image 20241101145231.png]]
+**Data Remanence**: sisa data after removal.
+![[Pasted image 20241101145445.png]]
+![[Pasted image 20241101145639.png]]
+
+### Data Destruction
+![[Pasted image 20241101145826.png]]
+**Overwriting** --> Ada cases dmn masih bisa direcover meski udah ditimpa null byes.
+**Sanitization** --> Cuma bikin infeasable aja, tapi masih bisa direcover, tapi susah bgt dan gk worth.
+Purge --> Bener-bener gk bisa direcover lagi.
+
+Tapi shreding, lebih recommended.
+
+![[Pasted image 20241101152519.png]]
+
+## Data Security Controls and Frameworks
+![[Pasted image 20241101152853.png]]
+
+## Data Protection (DRM, CASB, DLP)
+![[Pasted image 20241101155754.png]]
+**DRM** (digital rights management) --> Copyright, license key, kalo sharescreen gelap, etc.
+
+**CASB** (cloud access security broker) --> Netskope. Monitor user activity, browsing activity, warn admins about possible malicious / dangerous actions. Malware preventions, shadow IT activities, **enforce compliance and policy**. Intinya ini adalah Gatekeeper. **CASB juga bisa berperan sebagai DLP di cloud environment**.
+
+Shadow IT --> Intinya adalah user bisa menggunakan IT Resources yang di mana kita sebagai IT department tidak tahu.
+
+**DLP** (Data Loss Prevention) --> Prevent data exfiltration.
+Loss --> Laptop dicuri. Kita lose access ke datanya. or datanta didestruct. itu Loss
+Leak --> Kita ke hack, datanya didownload attacker, tapi kita masih ada copynya. itu Leak.
+
+Network DLP --> 
+- Untuk **data in motion** (DLP bisa bantu jika datanya classified as sensitive, akan notify admin or require admin permission dulu or **datanya gk dikasih untuk keluar dari network perusahaan kita**)
+
+Endpoint DLP --> 
+- Untuk **data in use** (DLP bisa bantu untuk realtime untuk block action bila action tersebut gk seharusnya dilakukan) dan 
+- **data at rest** (DLP bisa bantu untuk encrypt data dan enforce proper access control to it.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
