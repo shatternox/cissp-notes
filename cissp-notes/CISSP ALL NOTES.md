@@ -525,6 +525,29 @@ First, let's start out by defining what we mean by external dependencies.
 
 That can be cloud service providers, Internet service providers, raw materials, even key customers whose business is essential to our company's success.
 
+![[Pasted image 20241026152007.png]]
+![[Pasted image 20241026152101.png]]
+
+Intinya ketika external dependencies ter-impact, kita harus sedia backup. Dan harus dinamis krn things are always changing.
+
+C/o punya multiple external dependencies. Kyk CDC pake Jumio dan Onfido
+
+![[{F5ED32AE-A4BA-4E49-87B2-A18D01EC4457}.png]]
+![[{805081BD-FE57-4AE3-8DFB-7402F006B28A}.png]]
+
+**Domain 1 Review**
+![[Pasted image 20241026152903.png]]
+
+
+# Domain 2
+
+
+
+
+
+
+
+
 
 
 
