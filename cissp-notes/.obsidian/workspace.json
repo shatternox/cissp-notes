@@ -16,10 +16,27 @@
                 "file": "CISSP ALL NOTES.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "CISSP ALL NOTES"
+            }
+          },
+          {
+            "id": "06f6b7c35343164d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CISSP ALL NOTES.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CISSP ALL NOTES"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -93,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CISSP ALL NOTES"
             }
           },
           {
@@ -105,7 +130,9 @@
                 "file": "CISSP ALL NOTES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CISSP ALL NOTES"
             }
           },
           {
@@ -116,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,7 +155,9 @@
               "type": "outline",
               "state": {
                 "file": "CISSP ALL NOTES.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CISSP ALL NOTES"
             }
           }
         ]
@@ -146,19 +177,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6549445f896fea8b",
+  "active": "06f6b7c35343164d",
   "lastOpenFiles": [
+    "{38B3D787-C8B2-4E38-B6AC-95AE6CCA407F}.png",
+    "{144CF14B-7E50-4B6A-B842-EC9F9E7F77A1}.png",
+    "{9AFBDFF8-C18F-4B44-8C78-5DA63654C6EE}.png",
+    "Pasted image 20240903233454.png",
+    "CISSP ALL NOTES.md",
     "Pasted image 20241101155754.png",
     "Pasted image 20241101152853.png",
     "Pasted image 20241101152519.png",
     "Pasted image 20241101145826.png",
     "Pasted image 20241101145639.png",
     "Pasted image 20241101145445.png",
-    "Pasted image 20241101145231.png",
-    "Pasted image 20241101141452.png",
-    "Pasted image 20241101141253.png",
-    "Pasted image 20241101140951.png",
-    "Pasted image 20241101140627.png",
-    "CISSP ALL NOTES.md"
+    "Pasted image 20241101145231.png"
   ]
 }

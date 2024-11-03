@@ -623,18 +623,37 @@ Endpoint DLP -->
 - **data at rest** (DLP bisa bantu untuk encrypt data dan enforce proper access control to it.)
 
 
+# Domain 3 - The biggest domain out of all
+25% of all of the Curricullum
+- Security Architecture and Design
+- Cryptography
+- Physical Security
+
+![[{9AFBDFF8-C18F-4B44-8C78-5DA63654C6EE}.png]]
+
+### Security Models Fundamental Concepts
+- Tipe-tipe access control
+![[{144CF14B-7E50-4B6A-B842-EC9F9E7F77A1}.png]]
+**Mandatory Access Control** (MAC) --> Highly secure, usually what we would have in the **military or in highly secure organizations.** And it is not you have top secret clearance, you can see everything that is top secret. You will most likely have access to a subset of a subset. It might be nuclear submarine at top secret level, and then you still might have to go through formal access approval.
+
+**Role-based Access Control** (RBAC) --> Setiap role punya accessnya sendiri. Paling sering dipakai di organisasi. Jangan lupa kalo employee pindah divisi, hapus role lama, kasih role baru.
+
+**Attribute-based Access Control** (ABAC) --> Much better system, most likely organization bakal switching ke ABAC. Karena bener-bener conditional dan lebih granular. Lebih secure dari pada RBAC. **Access is granted based on subjects, objects and environmental conditions. And attributes can be assigned to both subjects, objects, and something in the environment.**
+
+The new thing here is **attributes**. This could be **where are you accessing it from**?**When** are you accessing it? 
+
+This could be threat levels. Let's say you are a project manager. Your role and your clearance might give you access to an object, **but you are not on the project team working on that specific project**. Well, then you get rejected.
+
+If you then get assigned to the project or you just need to help more, then all of a sudden you can access it. 
+
+Let's say you are the data owner, **you have full access to everything**, **but if you are trying to access that object from a place where you shouldn't be or at a time that you shouldn't be, well, then the access is also denied**. Those environmental conditions or attributes, gives us a much more granular access model that I think is going to pick up over the next 10 years, and is much, much more secure than Role Based Access Control.
+
+**Rule-based Access Control** (RUBAC) --> Ini seperti Firewall. **Tergantung rule yang kita set**. If apa, then apa. Kalau ada traffic dateng menuju port 80, block/drop the traffic.  Kalau ada traffic datang dari IP yang udh kita allowlist, allow. Gitu-gitu aja ez.
 
 
-
-
-
-
-
-
-
-
-
-
+- Bakal keluar di EXAM
+![[{38B3D787-C8B2-4E38-B6AC-95AE6CCA407F}.png]]
+**Bell-LaPadula** is only focused on confidentiality and it is mandatory access control.
 
 
 
