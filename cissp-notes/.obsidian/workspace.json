@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0c4add6034bf5c89",
+        "id": "c54abab1bacdb8ac",
         "type": "tabs",
         "children": [
           {
-            "id": "6549445f896fea8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CISSP ALL NOTES.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CISSP ALL NOTES"
-            }
-          },
-          {
-            "id": "06f6b7c35343164d",
+            "id": "a210f6e8a095cec8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "CISSP ALL NOTES"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,19 +162,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06f6b7c35343164d",
+  "active": "a210f6e8a095cec8",
   "lastOpenFiles": [
-    "{38B3D787-C8B2-4E38-B6AC-95AE6CCA407F}.png",
-    "{144CF14B-7E50-4B6A-B842-EC9F9E7F77A1}.png",
-    "{9AFBDFF8-C18F-4B44-8C78-5DA63654C6EE}.png",
-    "Pasted image 20240903233454.png",
-    "CISSP ALL NOTES.md",
-    "Pasted image 20241101155754.png",
-    "Pasted image 20241101152853.png",
-    "Pasted image 20241101152519.png",
-    "Pasted image 20241101145826.png",
-    "Pasted image 20241101145639.png",
-    "Pasted image 20241101145445.png",
-    "Pasted image 20241101145231.png"
+    "Pasted image 20240910132935.png",
+    "Pasted image 20240910132846.png",
+    "Pasted image 20240910132649.png",
+    "Pasted image 20240910132307.png",
+    "Pasted image 20240910131744.png",
+    "Pasted image 20240910131033.png",
+    "Pasted image 20240910111111.png",
+    "Pasted image 20240910110609.png",
+    "Pasted image 20240910110401.png",
+    "Pasted image 20240910105808.png",
+    "Pasted image 20240910105548.png",
+    "CISSP ALL NOTES.md"
   ]
 }
