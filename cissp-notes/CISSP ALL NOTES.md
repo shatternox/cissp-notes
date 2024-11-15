@@ -650,10 +650,109 @@ Let's say you are the data owner, **you have full access to everything**, **but 
 
 **Rule-based Access Control** (RUBAC) --> Ini seperti Firewall. **Tergantung rule yang kita set**. If apa, then apa. Kalau ada traffic dateng menuju port 80, block/drop the traffic.  Kalau ada traffic datang dari IP yang udh kita allowlist, allow. Gitu-gitu aja ez.
 
+#### **Bell-LaPadula** (MAC, Confidentiality)
 
 - Bakal keluar di EXAM
 ![[{38B3D787-C8B2-4E38-B6AC-95AE6CCA407F}.png]]
-**Bell-LaPadula** is only focused on confidentiality and it is mandatory access control.
+**Bell-LaPadula** is **only focused on confidentiality** and it is mandatory access control.
+
+It was developed by the US Department of Defense and it is a state machine model.
+
+Afalin no read up, no write down, no read up or write down. Afalin nama-namanya, star security property, dll.
+
+#### BIBA (MAC, Integrity)
+![[Pasted image 20241112134431.png]]
+BIBA is also mandatory access control, but the whole purpose of BIBA is data **integrity**.
+
+BIBA was also developed by the US DOD and it is a state transition model.
+
+BIBA also has three properties or axioms, but remember, the focus is integrity.
+
+No read down, no write up, no read or write up.
+
+
+#### LBAC, Lattice Based Acces Control (MAC, juga)
+![[Pasted image 20241112134653.png]]
+Complex
+
+
+#### Graham-Denning Model
+![[Pasted image 20241112134736.png]]
+
+
+#### HRU (Harrison, Ruzzo, Ullman)
+![[Pasted image 20241112134814.png]]
+Subject == Object di sini.
+
+It is based on an extension of the Graham-Denning model and it is an operating system level security model that focuses on the integrity of access rights to the system.
+
+
+#### Clark Wilson - Integrity
+![[Pasted image 20241112134922.png]]
+--> **Focuses on integrity**
+--> It separates the users from the back end data through what they call well-formed transactions and separation of duties.
+--> It uses subjects and objects that you are already familiar with, but it also uses a program which acts as an intermediary between the subjects and the objects.
+
+Example:
+Think of buying something on Amazon. If I go by a book, I can't go in and change how many books they have available. They allow me to add it to my cart, to pay for it, and **then the intermediary program that Amazon has subtracts one from the inventory once I have purchased or at least when they ship it**. Ada sistem yg otomatis ditengah. No human error or interaction with the integrity.
+
+The separation of duties that Clark-Wilson. uses is the same one we have talked about already. We don't let Bob both issue a purchase order and then approve it. The same here, we do not let the same subject certify a transaction and then allow them to implement it.
+
+
+#### Brewer-Nash (Chinese Wall model)
+![[Pasted image 20241113110920.png]]
+--> Gambar di kanan itu buat Non-Interference Model.
+
+#### Take-Grant Protection Model
+![[Pasted image 20241113111017.png]]
+
+#### Access Control Matrix
+![[Pasted image 20241113111041.png]]
+
+#### Zachman Framework (5W + 1H)
+![[Pasted image 20241113111141.png]]
+
+#### Security Models
+![[Pasted image 20241113111214.png]]
+![[Pasted image 20241113111251.png]]
+![[Pasted image 20241113111317.png]]
+
+## Evaluation Methods, Certification, and Accreditation
+![[Pasted image 20241113111532.png]]
+We need to know the **Orange Book** (computer system) and the **Red Book** (network).
+
+![[Pasted image 20241113111647.png]]
+![[Pasted image 20241113111742.png]]
+**EAL Level 1-7 ini HARUS DIAFAL BUAT EXAM.**
+
+### Secure Design Principles
+![[Pasted image 20241113111858.png]]
+![[Pasted image 20241113134354.png]]
+![[Pasted image 20241113134513.png]]
+Threat Modeling
+PASTA (Attacker Focused) - Process for Attack Simulation and Threat Analysis
+
+![[Pasted image 20241113134640.png]]
+STRIDE (Developer Focused) --> Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege
+
+Trike (Acceptable Risk Focused)
+
+Dread  --> Abandonden by Microsoft in 2008. 
+--> Disaster/Damage, Reprorducibility, Exploitability, Affected Users, and Discoverability (DREAD)
+
+![[Pasted image 20241113134928.png]]
+Kalo asal Trust bahaya, admin account compromised, the end.
+
+**Zero Trust** -> **NIST SP 800-207**. We don't trust anyone. Even udah pass certain perimeter and verification, tetap harus authenticate. 
+
+That is, we don't trust any device on our network, even if that one device has been verified. Every time a subject needs to access a device or an application, we both authenticate and authorize both of them.
+
+
+### Secure System Design Concepts
+![[Pasted image 20241113142911.png]]
+Layering != OSI model, beda hal.
+
+![[Pasted image 20241113143047.png]]
 
 
 
