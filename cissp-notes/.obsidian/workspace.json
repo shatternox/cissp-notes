@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "CISSP ALL NOTES"
             }
-          },
-          {
-            "id": "8d388040f1b06b60",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.6"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.6"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,19 +162,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d388040f1b06b60",
+  "active": "a3cad2adaf0d1003",
   "lastOpenFiles": [
-    "Pasted image 20241113143047.png",
-    "Pasted image 20241113142911.png",
-    "Pasted image 20241113134928.png",
-    "Pasted image 20241113134640.png",
-    "Pasted image 20241113134513.png",
-    "Pasted image 20241113134354.png",
-    "Pasted image 20241113111858.png",
-    "Pasted image 20241113111742.png",
-    "Pasted image 20241113111647.png",
-    "Pasted image 20241113111532.png",
-    "Pasted image 20241113111317.png",
+    "Pasted image 20241101155754.png",
+    "Pasted image 20241101152853.png",
+    "Pasted image 20241101152519.png",
+    "Pasted image 20241101145826.png",
+    "Pasted image 20241101145639.png",
+    "Pasted image 20241101145445.png",
+    "Pasted image 20241101145231.png",
+    "Pasted image 20241101141452.png",
+    "Pasted image 20241101141253.png",
+    "Pasted image 20241101140951.png",
+    "Pasted image 20241101140627.png",
     "CISSP ALL NOTES.md"
   ]
 }
