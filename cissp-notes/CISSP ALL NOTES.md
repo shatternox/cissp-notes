@@ -752,7 +752,145 @@ That is, we don't trust any device on our network, even if that one device has b
 ![[Pasted image 20241113142911.png]]
 Layering != OSI model, beda hal.
 
+A layer can only interact with the layer next to them.
+
 ![[Pasted image 20241113143047.png]]
+![[Pasted image 20241123100413.png]]
+
+As I mentioned, this is a conceptual model. It is idealized. And in actuality, we really only use ring 0 and ring 3. 1 and 2 have been collapsed because we want to make the applications faster.
+
+**That said, still no ring 0, 1, 2, and 3 for your exam**. And then finally and noteworthy mention, we also have something we call **ring -1** and that is **hypervisor** mode and that is used if our system is a **virtual machin**e.
+
+Then below ring 0, there would be the hypervisor, if it is not a virtual machine, well then we would stop at ring 0.
+
+
+## Managing Information System Lifecycle
+
+![[Pasted image 20241124204138.png]]
+![[Pasted image 20241124204225.png]]
+**Operation and maintenance**: The longest phase of the cycle
+
+![[Pasted image 20241124204444.png]]
+![[Pasted image 20241124205931.png]]
+
+## Secure Access Service Edge (SASE)
+![[Pasted image 20241124210023.png]]
+
+Penting, lebih kepake sekarang karena most organization udh 100% cloud sekarang. Not even physical infrastructure yang bisa dikontrol
+
+![[Pasted image 20241124210105.png]]
+![[Pasted image 20241124210428.png]]
+![[Pasted image 20241124210604.png]]
+
+
+## Hardware Architecture
+
+**Legacy Computer Architecture**
+![[Pasted image 20241124210724.png]]
+
+**Now Architecture** (Separate antara nothbridge and southbridge)
+![[Pasted image 20241124210812.png]]
+
+The closer you are the CPU the faster it gets. Makannya Northbridge is faster.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
