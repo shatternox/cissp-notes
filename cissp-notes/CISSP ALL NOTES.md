@@ -793,8 +793,34 @@ Penting, lebih kepake sekarang karena most organization udh 100% cloud sekarang.
 
 The closer you are the CPU the faster it gets. Makannya Northbridge is faster.
 
+![[Pasted image 20241126122029.png]]
 
+CPU Functionality
+![[Pasted image 20241126122320.png]]
+![[Pasted image 20241126122354.png]]
+![[Pasted image 20241126122642.png]]
+![[Pasted image 20241126122710.png]]
+![[Pasted image 20241126122831.png]]
+![[Pasted image 20241126122930.png]]
 
+The BIOS is stored in Read-Only Memory. On systems now, that means EEPROM. You may see an EPROM every so often, but you should never ever see a real just ROM or PROM. Because they are so old, so legacy, we should not have them in our environments. Them only being able to be programmed once is a security issue. The BIOS being stored in EEPROM can also be a security issue. **Remember, electronically erasable. That means that the skilled hacker can go in and change the lower-level operating system if we do not have enough other security controls in place**.
+
+![[Pasted image 20241126123542.png]]
+
+**Microservices**
+![[Pasted image 20241126123757.png]]
+Microservices > Monolith.
+
+![[Pasted image 20241126123916.png]]
+![[Pasted image 20241126124016.png]]
+Serverless == FaaS (Function as a Service), Lambda.
+
+#### Secure OS and Software Architecture
+![[Pasted image 20241126124146.png]]
+![[Pasted image 20241126124302.png]]
+
+## Virtualization, Cloud, and Distributed Computing
+![[Pasted image 20241126124631.png]]
 
 
 
