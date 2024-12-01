@@ -819,48 +819,65 @@ Serverless == FaaS (Function as a Service), Lambda.
 ![[Pasted image 20241126124146.png]]
 ![[Pasted image 20241126124302.png]]
 
-## Virtualization, Cloud, and Distributed Computing
+## Virtualization, Cloud, and Distributed Computing (IMPORTANT FOR EXAM)
+
+#### Virtualization
+
 ![[Pasted image 20241126124631.png]]
+![[Pasted image 20241201210443.png]]
+![[Pasted image 20241201210624.png]]
 
+Type 1 == Data centre, enterprise
+Type 2 == Home usage
 
+For the exam, I would know the difference between a type one and Type two hypervisor, their strengths and weaknesses of both and where we would use them. **For our data centers, it would make no sense to use Type two hypervisor because that extra layer is just going to eat up a lot of resources. In home environments, Type one doesn't really make sense either**. We pick the right implementation for what we are doing.
 
+**VM Risks**
+![[Pasted image 20241201210846.png]]
 
+We want to keep an eye on resource utilization on our VM hosts so we know when we're getting close and we know the resource utilization trends so we can predict in six months we are out of resources.
 
+#### Cloud Computing
+![[Pasted image 20241201211129.png]]
 
+**Private Cloud** --> Kita bikin cloud kita sendiri
+**Public Cloud** --> AWS, GCP, Azure
+**Hybrid Cloud** --> Mix of private and public.
+**Community cloud** --> Only for use by a specific community of consumer from organizations that have shared concerns (mission, policy, security requirements).
 
+**Cloud Shared Responsibilities**
+![[Pasted image 20241201224850.png]]
 
+**IaaS** --> Client responsibilities == ASDO (Apps, Security, Database, OS, ada firewall juga kadang)
+**PaaS** --> Client responsibilities == A (Apps)
+**SaaS** --> Client responsibilities == Data doang harusnya
 
+**Grid Computing**
+![[Pasted image 20241201225243.png]]
+![[Pasted image 20241201225310.png]]
+Much of copyright infringement happens on peer to peer networks.
 
+![[Pasted image 20241201225447.png]]
 
+Thin Client Application kyk VDI gitu gk sih.
 
+**Distributed Computing**
+![[Pasted image 20241201225617.png]]
+**Distributed Computing** **Environment** (DCE) == The user connect to whatever the closest. (One of the example is blockchain)
 
+**CDN (Content Delivery Network) is a DCE but not all DCEs is a CDNs.**
 
+Blockchain == Super high integrity. Satu block keubah, harus rehash semua block.
 
+![[Pasted image 20241201230009.png]]
 
+Edge Computing == Salah satunya adalah CDN (contoh paling simplenya.)
 
+### IOT (Internet of Things)
+![[Pasted image 20241201230234.png]]
+Gk secure, karena biasanya dedesign buat functionality instead of security. **Most of them uses well-known ports and default passwords.** Lebih bahaya lagi apalagi semuanya connect ke internet.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Biasnaya IoT devices juga tidak well maintained patchesnya. Gk ada proper patch management. Karena susah buat patch devicenya kalo udah dideploy (inability to patch / update the software).
 
 
 
