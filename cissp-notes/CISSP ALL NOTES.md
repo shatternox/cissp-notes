@@ -877,7 +877,9 @@ Edge Computing == Salah satunya adalah CDN (contoh paling simplenya.)
 ![[Pasted image 20241201230234.png]]
 Gk secure, karena biasanya dedesign buat functionality instead of security. **Most of them uses well-known ports and default passwords.** Lebih bahaya lagi apalagi semuanya connect ke internet.
 
-Biasnaya IoT devices juga tidak well maintained patchesnya. Gk ada proper patch management. Karena susah buat patch devicenya kalo udah dideploy (inability to patch / update the software).
+Biasanya IoT devices juga tidak well maintained patchesnya. Gk ada proper patch management. Karena susah buat patch devicenya kalo udah dideploy (inability to patch / update the software).
+
+
 
 
 
