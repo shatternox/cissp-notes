@@ -879,19 +879,30 @@ Gk secure, karena biasanya dedesign buat functionality instead of security. **Mo
 
 Biasanya IoT devices juga tidak well maintained patchesnya. Gk ada proper patch management. Karena susah buat patch devicenya kalo udah dideploy (inability to patch / update the software).
 
+## Emanations and covert channels
+
+Emanation == Emanasi == an abstract but [perceptible](https://www.google.com/search?sca_esv=d608386cb98ae779&sxsrf=ADLYWIIhA6aSvqrglmd486U6wpncjTTwBQ:1733678227753&q=perceptible&si=ACC90nwZrNcJVJVL0KSmGGq5Ka2YLKsPTpWhaTFDKj6YTBOp018N0z1FogLaLt0xS5UPEpW0GQ08jRzwl9dbPnsv3hBS9sYnsTkf52OG6hvQeThCs8z-1jM%3D&expnd=1&sa=X&ved=2ahUKEwix5K3X1piKAxWGRmwGHWTIJ24QyecJegQIQBAO) thing that issues or [originates](https://www.google.com/search?sca_esv=d608386cb98ae779&sxsrf=ADLYWIIhA6aSvqrglmd486U6wpncjTTwBQ:1733678227753&q=originates&si=ACC90nz-2feRzoY4yuySkO-aQE811hW-D8YePk2xNKKVVMiAj_Q0V5qMUnS9JvrRgYjcORgQNylJwOnqYhR17HDg-QqZGrOS_JTOGHkPk4Q9hhXDTSkIaII%3D&expnd=1&sa=X&ved=2ahUKEwix5K3X1piKAxWGRmwGHWTIJ24QyecJegQIQBAP) from a source.
+
+Kyk side channel attack (?)
+
+![[Pasted image 20241209001803.png]]
+
+If you are sending a text message and the attacker has access to your motion sensor on your phone, then your phone will move slightly left, right, up, down. Whenever you text, the motion sensor can detect that. And that is enough to reassemble your messages just from that movement.
+
+**Any emanation is really just an unintentional information bearing signal that if intercepted and analyzed, can lead to compromise and** **we can technically protect against emanations by using heavy metals and encasing whatever we have barring the signal**.
 
 
+Covert Channels, **intentionally creating the capability to transfer information using channels it was not intended for**.
+--> Most common buat user enum. analyze the difference between response.
 
+Another way an attacker could use a covert storage channel could be if we do not have ICMP packets blocked outwards, they can either have the payload in the outbound ICMP package or they can just send the package to a certain IP at a certain port. And the combination of the IP and the port could respond to a letter or a word, and then the information could be assembled by whomever that is sent to.
 
+![[Pasted image 20241209002242.png]]
+**Steganography** --> Hiding secret inside a media (image, audio, etc.)
 
+**Digital Watermarks** --> Let's say I go on Amazon and I buy a study guide for the exam. I download it as a PDF, then either visibly or invisibly, it has a watermark identifying it as mine. Now, if I decide to share that with other people, then my personally identifiable information is embedded in that file. If they find it on a website sharing illegally downloaded materials, it will say this file was purchased by Thor Pederson. Ketangkep deh siapa yang ngebocorin.
 
-
-
-
-
-
-
-
+## Malware
 
 
 
