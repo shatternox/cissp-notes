@@ -903,41 +903,54 @@ Another way an attacker could use a covert storage channel could be if we do not
 **Digital Watermarks** --> Let's say I go on Amazon and I buy a study guide for the exam. I download it as a PDF, then either visibly or invisibly, it has a watermark identifying it as mine. Now, if I decide to share that with other people, then my personally identifiable information is embedded in that file. If they find it on a website sharing illegally downloaded materials, it will say this file was purchased by Thor Pederson. Ketangkep deh siapa yang ngebocorin.
 
 ## Malware
+**Common types of Malware**
+![[Pasted image 20241210142216.png]]
+
+you are not going to see definition questions on the exam. That means you're not going to see what is a stealth virus.
+
+What you are going to see is application or how we would protect against a certain type of malware or in this scenario, what would you do?
+
+So you need to learn what each type is, how it compromises our systems and what we can do to protect against it. You may see a paragraph of text and somewhere in there there is alter signature or embedded. And from those keywords, you know which type of malware it is, then you also know what can we do to protect against it and what can we do once we are infected?
 
 
+**Viruses** are one of the most common types of malware. **They require some sort of human interaction** and they most commonly infect our systems from USB drives or any other portable device.
+--> **Macro Virus** = Pake macro di documents
+--> **Boot Sector** = Boot sector virus, it's in the boot sector, which is a great place to hide a virus, because remember, the boot sector is the underlying OS that boots before the real OS. Which is also why many antivirus and malware programs can be set to run on the boot sector before this system loads it completely.
+--> **Stealth Virus** = **Tries to hide themselves**
+--> **Polymorphic** = Change their signature to avoid AV signature definitions
+--> **Multipart** = Ada multiple part. Spread across multiple vectors. That means that part of it could be in the OS and part of it could be in the boot sector. Susah dibersihin.
 
+![[Pasted image 20241210142841.png]]
+**Worm** = Spread on it's own, no need for human interaction. Easy to detect.
+**Trojan** = Malicious code embedded in a program that's normal.
+**Rootkits** = Replace some part of OS/Kernel with malicious payload. 
+	If it is a user rootkit, then it will be on Ring 3,
+	if it is a kernel rootkit, then it is Ring 0.
 
+And remember, the kernel is the thing that loads before the OS. So unless our boot sectors are scanned before they load up, this could be a real problem because it loads first every time.
 
+**Logic Bombs** = Logic bombs are based on a certain time or a certain event. **Unless the logic in that malware is fulfilled, it does nothing**. It stays dormant and it is simplistically just based on IF-THEN, if this happens, then do that.
 
+That could be, if Bob doesn't get a ten thousand dollar bonus this year, then the malicious code executes. **Or if the date is 5/15 2022 at 2:12, then execute the malicious code**.
 
+![[Pasted image 20241210143216.png]]
+**Packers** (Software legit yang suka dipake malware) = are programs that are used to compress executable files. They're not good. They're not bad. **They are neutral technology**. They are, however, important to malware because the bad actors will also use them. This could be the program that you downloaded illegally that does really contain the right program. But it also has the Trojan we talked about before, and it doesn't necessarily have to be on bad sites. It could be the real site. If the hacker has been able to hack the website and upload their compromised file with their Trojan, then how would you ever know? **And the answer here is you look at the hash**, remember, hashes are a one way function, the same plaintext, all the same file should give you the same hash if nothing was altered. But if they have added a Trojan to the program, then the hash is going to be different. So neutral technology that can be used for bad things.
 
+**Antivirus** = They used to be either signature based or behavioral based. Now they're both. Heuristic (behavioral based, bisa jadi sering false-positive, but we need this krn malware zaman skrng udah gampang hide dari signature based detection)
 
+![[Pasted image 20241210143604.png]]
+**Server (service) Side Attacks** (hacker nyerang kita.) = a service side attack is someone attacking a target. They come most often from outside our organization and they attack a target. **They are very specific on going to that one target**. Kalau kita kurang defense in depth, dll, pasti jebol.
 
+**Client-Side Attacks** (user melakukan hal tolol) = The client-side attack is something we as the user initiate. We go to them and get infected with some malicious content in a Web browser, instant messaging or something like that. Kalo kita melakukan hal tolol pasti jebol.
 
+**Server, service side attacks can be much harder to accomplish if the target has a great defense in depth**, which hopefully we do.
 
+**Client-side attacks are often more successful because we go out and do something that we shouldn't**, we established the session and that might bypass some of our security measures.
 
+**Server side attacks are successful when we don't do something that we're supposed to, client-side attacks are successful when we do something we shouldn't have.**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Web Architecture and Attacks
+![[Pasted image 20241210144256.png]]
 
 
 
