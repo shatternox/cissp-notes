@@ -952,22 +952,27 @@ That could be, if Bob doesn't get a ten thousand dollar bonus this year, then th
 ## Web Architecture and Attacks
 ![[Pasted image 20241210144256.png]]
 
+Security should always be a part of the design process, just like the functional requirements.
+
+**OWASP (Updated every 4 years)**
+![[Pasted image 20241212234110.png]]
+
+**XML (Extensible Markup Language) and SOA** **(Service-Oriented Architecture)** 
+![[Pasted image 20241212234154.png]]
+
+XML is a standard way of encoding documents and data. It is somewhat similar to HTML- Hypertext Markup Language, but it is more universal, whereas HTML is only used for the web. XML is mainly used for the web, but it can also be used outside of the web. It can, for instance, be used to store application configuration outputs from auditing tools and many other things.
 
 
+SOA or Service Oriented Architecture is a style of software design where services are provided to all the components. Very simplified, it is your code broken into reusable modules, and it has been used for many years. The only difference now is we can do it over a network. It can act as a bridge between the back end data and our applications. You can also think of it like the separation we have between the hardware, the kernel, the drivers and the operating system.
 
+The operating system doesn't really care which kind of hardware it runs on. It has that layer in between the kernel and the drivers. This is somewhat similar. The application and the backend data don't really care about each other. They just need some sort of medium they can communicate through, which is the service oriented architecture.
 
+## Database Security
+![[Pasted image 20241212234925.png]]
+**Poly-instantiation (Multiple instatiation or multiple instance)**
+--> 1 File yang sama tapi isinya bisa beda tergantung yang buka. Bisa jadi dibedain by secret clerance usernya. Kalo yang buka adalah user Top Secret, maka isinya akan jadi confidential. dan sebaliknya.
 
-
-
-
-
-
-
-
-
-
-
-
+Data analytics (an on-going process) != Data mining.
 
 
 
