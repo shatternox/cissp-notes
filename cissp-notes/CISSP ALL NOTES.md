@@ -974,6 +974,76 @@ The operating system doesn't really care which kind of hardware it runs on. It h
 
 Data analytics (an on-going process) != Data mining.
 
+## Mobile Device Security (Phone, USB, CD, Laptop, etc. intinya anything mobile yg bisa dibawa)
+
+![[Pasted image 20241218121230.png]]
+- Remote wipe
+- Full disk encryption
+- Lock screen
+- Device Tracking
+- Account Lockout
+- Disable removable storage
+- MDM (Automatic update dan push configuration scripts secara global ke semua device. Guna bila device kita kalo udah banyak, kyk Airwatch)
+
+![[Pasted image 20241218121838.png]]
+![[Pasted image 20241218122034.png]]
+
+## ICS (Industrial Control Systems)
+![[Pasted image 20241218122311.png]]
+ICS is an umbrella term we use for the control system and associated instrumentation used in industrial production technology. OT (?) kah
+
+What that really means is it is a way for us to monitor and automate production plants. And no, those are not potted plants.
+
+
+SCADA --> Command and Control untuk sistem pabrik. 
+
+The PLC is for smaller setups and is something we would use if our IO points were not more than a couple of thousands.
+
+![[Pasted image 20241218122555.png]]
+
+## Cryptography
+![[Pasted image 20241218122836.png]]
+
+As with anything else we do, we want exactly enough encryption. Not too much. Not too little. We want our encryption to be so strong that it is unbreakable or at least it's going to take an unreasonable amount of time to break it.
+![[Pasted image 20241219153152.png]]
+![[Pasted image 20241219153355.png]]
+![[Pasted image 20241219153531.png]]
+
+Exemption for the user?
+SSL Pin?
+The traffic is being dropped by the Netskope cloud?
+Membership of the user, any policy, is there a policy that blocking the log being ingested?
+
+
+
+Discuss about this SSL Decrypt Policies.
+
+Send the logs to the support team.
+
+Submit the log and says that in this user logs, it didnt work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
