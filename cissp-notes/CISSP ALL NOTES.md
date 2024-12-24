@@ -1008,26 +1008,10 @@ As with anything else we do, we want exactly enough encryption. Not too much. No
 ![[Pasted image 20241219153152.png]]
 ![[Pasted image 20241219153355.png]]
 ![[Pasted image 20241219153531.png]]
-
-Exemption for the user?
-SSL Pin?
-The traffic is being dropped by the Netskope cloud?
-Membership of the user, any policy, is there a policy that blocking the log being ingested?
-
-
-
-Discuss about this SSL Decrypt Policies.
-
-Send the logs to the support team.
-
-Submit the log and says that in this user logs, it didnt work.
-
-
-
-
-
-
-
+![[Pasted image 20241223132759.png]]
+![[Pasted image 20241223132921.png]]
+![[Pasted image 20241223133038.png]]
+![[Pasted image 20241223133115.png]]
 
 
 
