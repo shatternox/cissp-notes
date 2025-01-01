@@ -1012,49 +1012,63 @@ As with anything else we do, we want exactly enough encryption. Not too much. No
 ![[Pasted image 20241223132921.png]]
 ![[Pasted image 20241223133038.png]]
 ![[Pasted image 20241223133115.png]]
+![[Pasted image 20241224180529.png]]
+![[Pasted image 20241224180923.png]]
+![[Pasted image 20241229211552.png]]
+![[Pasted image 20241229211621.png]]
+![[Pasted image 20241229211927.png]]
 
 
+## Symmetric Encryption
+### DES (AFALIN MODE-MODENYA)
+![[Pasted image 20241229212140.png]]
+![[Pasted image 20241229212310.png]]
+![[Pasted image 20241229212352.png]]
+
+### AES, Blowfish, Twofish (AFALIN MODE-MODENYA)
+![[Pasted image 20241229212605.png]]
+![[Pasted image 20241229212651.png]]
+![[Pasted image 20241229212723.png]]
+![[Pasted image 20241229212739.png]]
+
+**Feistel**
+![[Pasted image 20241229212815.png]]
+
+### RC4, RC5, RC6
+![[Pasted image 20241229213019.png]]
 
 
+## Asymmetric Encryption
+![[Pasted image 20241229213232.png]]
+![[Pasted image 20250101095010.png]]
+![[Pasted image 20250101095123.png]]
+![[Pasted image 20250101095236.png]]
 
+**ECC (Eliptic Curve) --> Patented, jadi berbayar**
 
+![[Pasted image 20250101095335.png]]
 
+## Hashing
+![[Pasted image 20250101095537.png]]
+- It only protect Integrity but **doesn't provide confidentiality**.
 
+![[Pasted image 20250101095816.png]]
+![[Pasted image 20250101095908.png]]
+![[Pasted image 20250101100024.png]]
+![[Pasted image 20250101100056.png]]
 
+Nonce sama aja kyk salting. Baca aja.
 
+## Quantum Computing and Quanting Cryptography
 
+![[Pasted image 20250101100417.png]]
+![[Pasted image 20250101100433.png]]
+![[Pasted image 20250101100643.png]]
+![[Pasted image 20250101100722.png]]
+![[Pasted image 20250101100742.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Attacks on Cryptography
+![[Pasted image 20250101100909.png]]
 
 
 
