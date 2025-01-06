@@ -1252,6 +1252,236 @@ INGAT, HUMAN IS THE MOST IMPORTANT.
 
 Afalin nih simplex, duplex, etc.
 
+**Simplex** --> Radio, 1 arah.
+
+Half-duplex itu kyk Walkie talkie --> Ngomongnya gk bisa bareng, harus ganti-gantian. One at a time.
+
+**Full-Duplex** --> Telephone, voice call.
+
+**Baseband** --> Ethernet. 1000base-T == STP cable is a 100 megabit baseband Shielded Twisted Pair cable.
+
+Internet 
+
+Intranet --> Organization internal network
+
+Extranet --> Connection between private intranets. Seperti kita bisa connect ke network bisnis lain.
+
+![[Pasted image 20250106100629.png]]
+![[Pasted image 20250106102732.png]]
+
+## OSI Model (Important-important for exam)
+![[Pasted image 20250106103056.png]]
+
+Afalin PDUnya.
+
+Layer 1 --> Bits
+Layer 2 --> Frames
+Layer 3 --> Packets
+Layer 4 --> Segments
+Layer 5 - 7 --> Data
+
+![[Pasted image 20250106114206.png]]
+
+Layer 1
+![[Pasted image 20250106103337.png]]
+
+Expensive -> Fiber
+Cheap -> Copper
+Cheap-Secure -> Fiber
+Secure -> Fiber
+
+Layer 2
+![[Pasted image 20250106112241.png]]
+Layer-2 --> MAC Address.
+
+MAC Address must be unique in that local network.
+
+With IPV4, we can use both 48 and 64bit devices, whereas IPV6 can only use 64bit Mac addresses.
+
+If we use IPV6 and we have devices on our network that are only 48bit Mac addresses, then IPv6 will just seam in another 16 bits into the Mac address, effectively making the 48 bit a 64 bit Mac address.
+
+**The most common threats on layer two are Mac spoofing and Mac flooding.**
+
+Carrier Sense Multiple Access (CSMA) 
+-> Collision Detection (CD)
+-> Collision Avoidance (CA) 
+
+Mencegah network collision.
+
+Collision paling sering di HUB. Switch udh lebih aman.
+
+Layer 3
+![[Pasted image 20250106112725.png]]
+TRICK: **SEMUA PROTOCOL YANG MULAI DENGAN HURUF I ADALAH LAYER 3 PROTOCOL, KECUALI IMAP (LAYER** 7)
+
+Layer 4
+![[Pasted image 20250106112816.png]]
+SSL/TLS --> Masuk ke layer 4 - layer 7
+
+![[Pasted image 20250106113014.png]]
+
+The bigger the layer the slower and smarter it gets.
+Layer 1 --> It's just 1 and 0, its fast.
+
+Semakin nambah layernya, semakin banyak data yang ditambahkan.
+
+Layer 7 --> Datanya udah banyak di sini, semakin slow.
+
+
+Layer 5, 6, 7 (Data, saling integrated mereka)
+![[Pasted image 20250106113625.png]]
+
+**TRAFFIC IS BEING ENCRYPTED ON LAYER 6.** 
+--> SSL/TLS
+
+Active Directory Integration --> Layer 7
+
+![[Pasted image 20250106113727.png]]
+
+HTTPSnya itu di layer 7. TETAPI PORT NUMBER itu di Layer 5. JGN SALAH
+
+Jadi kalau ditanya port 443 di layer mana, itu di layer 5 (session layer)
+
+Kalo HTTPS di layer 7.
+
+
+### TCP / IP Model or Internet Protocol Suite or DOD Model
+![[Pasted image 20250106113924.png]]
+
+-> Cuma ada 4 layer instead of 7.
+
+1. Link and Physical Layer / Network Access Layer
+2. Network Layer
+3. Transport Layer
+4. Application Layer
+
+![[Pasted image 20250106114141.png]]
+
+Link and Physical Layer
+![[Pasted image 20250106114312.png]]
+
+Network Layer
+![[Pasted image 20250106114321.png]]
+
+Transport Layer (TCP, UDP, dan port number)
+![[Pasted image 20250106114421.png]]
+
+Application Layer
+![[Pasted image 20250106114505.png]]
+
+**How packet travel**
+![[Pasted image 20250106114657.png]]
+
+Dari kita buka website (dari application), sampe ke targetnya (ke applicaiton lagi). Fascinating.
+
+### IP Address, Mac Address, and Port
+![[Pasted image 20250106114923.png]]
+
+Kalo device 48Bit, IPV6, akan nambahin FF:FE di tengah biar jadi 64bit.
+
+![[Pasted image 20250106133518.png]]
+![[Pasted image 20250106133723.png]]
+![[Pasted image 20250106133818.png]]
+
+![[Pasted image 20250106134217.png]]
+![[Pasted image 20250106134304.png]]
+
+Traffic Types
+![[Pasted image 20250106144740.png]]
+Unicast - 1 to 1
+Multicast - 1 to many
+Broadcast - 1 to all (yang di sent ke situ, di sent ke semua)
+
+### IPv4
+32bit
+![[Pasted image 20250106144909.png]]
+
+![[Pasted image 20250106145141.png]]
+
+![[Pasted image 20250106145518.png]]
+Yang kita pake di rumah itu PAT. Jadi, gmn caranya 1 Public IP bisa dipake bnyk private IP (devices). Ternyata dia differenciate by port.
+
+![[Pasted image 20250106145643.png]]
+![[Pasted image 20250106145818.png]]
+
+### IPv6
+128bit
+![[Pasted image 20250106145921.png]]
+
+IPSec is built in to IPv6, whereas with IPv4, it is just bolted on. IPv6 is still happening behind the scenes, you as a consumer rarely see it. I think three out of the four last Internet connections I had were IPv4, the newest one, the fiber connection is IPv6, where we're seeing really heavy use is IoT devices, cell phones, and then the service providers themselves, the long haul providers and all of the other stuff that we don't see as customers.
+
+![[Pasted image 20250106150227.png]]
+![[Pasted image 20250106150713.png]]
+
+### Protocols
+
+### ARP
+![[Pasted image 20250106150809.png]]
+--> Nyari IP relate ke MAC Address mana (device mana)
+--> Ada RARP (Reverse ARP) --> Resolve MAC address to IP.
+
+### ICMP
+![[Pasted image 20250106150906.png]]
+Ping, Traceroute, mastiin resource is up.
+
+Ada TTL. 
+128 ms --> Windows
+64 ms --> Linux.s
+
+### Traceroute
+![[Pasted image 20250106151054.png]]
+Tiap router, ngurangin TTL 1. Terus kirim ulang dengan TTL lebih besar. Cari Brp Hop untuk capai target kita dan lewat mana saja.
+
+Max 30 Hops.
+
+### SSH and Telnet
+![[Pasted image 20250106151213.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
