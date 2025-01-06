@@ -1069,6 +1069,216 @@ Nonce sama aja kyk salting. Baca aja.
 
 ## Attacks on Cryptography
 ![[Pasted image 20250101100909.png]]
+![[Pasted image 20250103131528.png]]
+![[Pasted image 20250103134422.png]]
+![[Pasted image 20250103134715.png]]
+![[Pasted image 20250103134816.png]]
+![[Pasted image 20250103134936.png]]
+![[Pasted image 20250103135057.png]]
+![[Pasted image 20250103135205.png]]
+![[Pasted image 20250103135242.png]]
+![[Pasted image 20250103135313.png]]
+
+### Digital Signatures
+![[Pasted image 20250103135416.png]]
+![[Pasted image 20250103135600.png]]
+![[Pasted image 20250103135831.png]]
+![[Pasted image 20250103135908.png]]
+OCSP --> Yang sekarang dipake. It's faster.
+
+### MAC, HMAC, SSL, TLS
+![[Pasted image 20250103140213.png]]
+![[Pasted image 20250103140320.png]]
+
+### IPSEC (IMPORTANT) and PGP
+![[Pasted image 20250103140449.png]]
+
+With IPv6, IPSEC is built in.
+
+Kalo di IPv4 itu Addon aja.
+
+![[Pasted image 20250103140630.png]]
+When we use IPSEC, we can either use it in **tunnel mode or in transport mode**.
+
+**In tunnel mode (THE MOST COMMON USED MODE IN IPSEC), we encrypt and authenticate the entire data package, including the headers, and we use tunnel mode for systems that does not natively speak IPSEC.**
+
+**In transport mode. Here, we only encrypt and authenticate the payload. Everything else is left as is because the two systems know how to talk to each other already.**
+
+![[Pasted image 20250103140713.png]]
+
+IKE --> this helps the system to **choose the fastest and most secure type of encryption and hashes that both sides can use.**
+
+**PGP**
+![[Pasted image 20250103141039.png]]
+
+# Physical Security
+![[Pasted image 20250103141342.png]]
+
+Bollards --> Sesuatu penjaga yang mencegah mobil / kendaraan buat lewat. Kyk tiang besi / beton, etc.
+
+**Deterrent Controls** --> Yang bikin takut / discourage dan membuat orang mengurungkan niat untuk menyerang.
+
+**Compensating Controls** --> controls that **we implement to compensate** for other controls that either are impossible or simply too expensive. Contohnya, daerah Data centre kita rawan banjir. Dan kita gk bisa pindahin, jadi untuk mengcompensate itu, kita bikin sesuatu buat mencegah banjir, seperti penyerap air di servernya, etc.
+
+**Administrative Controls** --> Policies, procedures.
+
+![[Pasted image 20250105131821.png]]
+![[Pasted image 20250105131911.png]]
+![[Pasted image 20250105132127.png]]
+
+And they are hooked up to a DVR, a digital video recorder, which then stores the recordings on either a local server or device or on a network video recorder, NVR.
+
+In good security design, we would want the NVR or the remote network location over a local storage.
+
+![[Pasted image 20250105132528.png]]
+![[Pasted image 20250105132614.png]]
+![[Pasted image 20250105132701.png]]
+![[Pasted image 20250105132810.png]]
+![[Pasted image 20250105132916.png]]
+Data kita itu distore di dalam ICCnya. 
+
+![[Pasted image 20250105133122.png]]
+![[Pasted image 20250105133326.png]]
+![[Pasted image 20250105133418.png]]
+![[Pasted image 20250105133506.png]]
+![[Pasted image 20250105133724.png]]
+![[Pasted image 20250105134116.png]]
+![[Pasted image 20250105134200.png]]
+![[Pasted image 20250105134250.png]]
+
+### Physical Security - Site Selection (Cara pilih lokasi datacenter / site yang baik)
+![[Pasted image 20250105134550.png]]
+
+Greenfield --> Undeveloped land. Untouched land.
+Topography --> Bentuk tanahnya.
+Utilities --> How reliable is the power, the internet in the area.
+
+
+![[Pasted image 20250105152448.png]]
+![[Pasted image 20250105152558.png]]
+![[Pasted image 20250105152647.png]]
+![[Pasted image 20250105152810.png]]
+![[Pasted image 20250105153210.png]]
+
+### Media Storage and Locations
+![[Pasted image 20250105153515.png]]
+
+### Asset Tracking and Hardware Hardening
+![[Pasted image 20250105153822.png]]
+
+### Electricity
+![[Pasted image 20250105154316.png]]
+
+**UPS** - uninterruptible power supplies. Remember, those are the big banks of batteries and you can see a picture over here on the right, well, you see those rows and rows of batteries.
+**PDU** - power distribution unit. **the PDUs ensure that we have** **the clean power, that the voltage is not too high or too low/ just right voltage jadi gk over dan bikin korslet.**
+
+![[Pasted image 20250105154623.png]]
+![[Pasted image 20250105154823.png]]
+
+And that is called crosstalk. Since electricity from one cable can affect another, this can damage our integrity. The data is going to be corrupted. And not only our copper Ethernet cables susceptible to crosstalk, they can also be a problem for our confidentiality. Someone can clamp a sniffer on the cable and they can then pick up our traffic, which is why it is so important that all our traffic is encrypted.
+
+
+**From an IT security standpoint, fiber cables are always preferable over copper. They're not susceptible to EMI.**
+
+**They can't be sniffed very easily, which then makes them much more secure.**
+
+Cheapest-secure == Fiber optics, bukan Copper. Yes copper lebih murah tapi gk secure.
+
+
+**Power Fluctuations** --> Will affect Availability. Power fluctuations could cause system downtime or hardware damage, thus seriously impacting the availability of the system. While severe power issues could potentially lead to loss of data (impacting integrity) or temporary exposure of data (impacting confidentiality), these impacts are less direct and less likely than the impact on availability."
+
+### Environmental Controls
+![[Pasted image 20250105155302.png]]
+
+Too cold is expensive and not good.
+
+![[Pasted image 20250105155555.png]]
+![[Pasted image 20250105155809.png]]
+
+![[Pasted image 20250105155839.png]]
+
+### Fire Supression
+![[Pasted image 20250105160022.png]]
+
+**FM200 Fire Supression**
+![[Pasted image 20250105160103.png]]
+![[Pasted image 20250105160153.png]]
+![[Pasted image 20250105160222.png]]
+
+In our data centers and most of our office locations, we would probably use orange, red and maybe yellow bulbs, nothing higher.
+
+![[Pasted image 20250105160356.png]]
+![[Pasted image 20250105160545.png]]
+![[Pasted image 20250105160651.png]]
+![[Pasted image 20250105160801.png]]
+
+Fire Extinguisher ada class-classnya. Cuma boleh dipake di api yang sesuai classnya.
+
+![[Pasted image 20250105160930.png]]
+
+Remember, A for ash, when it burns, it turns into ash.
+
+Type B is flammable liquids and gas. Think B for a barrel, liquids are in a barrel.
+
+Type C is electrical equipment. Think C for current like the power we use for our servers, that is current.
+
+Type D is combustible metals, think D- dynamite. It explodes, it is combustible.
+
+Type K that is oils and fats that are burning. Think K for kitchen.
+
+**Sprinkler System** --> Most effective fire prevention security controls for detection and suppression.
+
+**Photoelectric Detector** --> Photo itu cahaya, berarti fokus ke **Smoke**, karena smoke obscures light.
+
+Which of the following is the MOST important indicator of a well-functioning HVAC (Heating, Ventilation, and Air Conditioning) system? **Proper Airflow**
+
+Kenapa? Proper airflow is critical for maintaining a stable environment, especially in heat-generating areas like data centers. Adequate airflow ensures efficient **distribution of cool air** and effective **removal of hot air**, maintaining consistent temperature and preventing overheating.
+
+### Personnel Safety
+![[Pasted image 20250105161558.png]]
+![[Pasted image 20250105161757.png]]
+![[Pasted image 20250105162026.png]]
+INGAT, HUMAN IS THE MOST IMPORTANT.
+
+![[Pasted image 20250105162111.png]]
+
+
+# Domain 4 - Communication and Network Security
+
+![[Pasted image 20250105163730.png]]
+
+### Networking Basics and Definitions
+![[Pasted image 20250105163820.png]]
+
+Afalin nih simplex, duplex, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
