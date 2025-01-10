@@ -1446,6 +1446,117 @@ Regular FTP is like Telnet for SSH. Regular FTP is not secure, even for internal
 ### Email Protocols
 ![[Pasted image 20250110000118.png]]
 
+### DNS
+![[Pasted image 20250110110001.png]]
+
+### SNMP (Simple Network Management Protocol)
+--> Buat monitor devices di dalam network.
+![[Pasted image 20250110110138.png]]
+
+it can either report up or down or in version two or three, we get a lot more granularity. In version two and three, we can see a device traffic utilization, the internal temperature, memory use, how much of the hard disk is used, what percentage the HVAC is running at, how much battery power is left on our UPS and on and on.
+
+So a very useful tool to keep an eye on our environment and it can help us prevent future incidents.
+
+SNMPv1 and SNMPv2 itu cleartext. Bahaya.
+
+SNMPv3 skrng udh encrypted.
+
+Cuma orang malas upgrade ke SNMPv3.
+
+### HTTP and HTTPS
+![[Pasted image 20250110110424.png]]
+HTML is what we send. HTTP is how we send it.
+
+### BOOTP and DHCP
+![[Pasted image 20250110110552.png]]
+
+Biasanya static IP diassign ke device yg matters aja kyk Server. Biasanya workstation dynamic.
+
+## Cables
+![[Pasted image 20250110110926.png]]
+![[Pasted image 20250110133608.png]]
+UTP cable yg paling sering dipakai.
+
+STP Lebih secure dari EMI tapi mahal.
+
+Connector yg paling sering dipakai itu RJ45 buat modem, switch, router.
+
+Buat telepon biasanya RJ11.
+
+Ada juga cable Coaxial buat modem ke ISP, ato gk TV.
+
+![[Pasted image 20250110133808.png]]
+
+**Fiber Optic** --> Kabelnya bisa panjang bgt karena tidak ada atenuation. Lebih secure juga. Tapi mahal dan lebih susah digunakan. Dalemnya kaca, jadi gk bisa dibend bgt. Sekali patah, rusak kabelnya.
+![[Pasted image 20250110134801.png]]
+
+![[Pasted image 20250110134913.png]]
+Satuannya, KIlobit, megabit, gigabit, terabit, petabit per second.
+
+Data center biasanya pake Fiber karena di speed is so good.
+
+### LAN Topologies, Technologies, and Protocol
+![[Pasted image 20250110135115.png]]
+
+Copper Ethernet berbeda dengan Fiber Ethernet.
+
+![[Pasted image 20250110143052.png]]
+![[Pasted image 20250110143202.png]]
+
+Kabel pake ethernet kita bisa liat siapa aja di jaringan. Kalo WIFI, kita cuma bisa liat access point aja. Makannya harus RTS (request to send) dan kalo dikasih CTS (Clear to send) sama router baru kita bisa kirim packet.
+
+![[Pasted image 20250110143319.png]]
+![[Pasted image 20250110143330.png]]
+![[Pasted image 20250110143425.png]]
+
+Semua topology Legacy kecuali Star dan Mesh, karena kita masih pake itu sekarang. Mencegah single point of failure.
+
+![[Pasted image 20250110143458.png]]
+
+
+## WAN (Wide Area Network) Technologies and Protocol
+![[Pasted image 20250110143646.png]]
+![[Pasted image 20250110143753.png]]
+SVC gk selalu up.
+
+![[Pasted image 20250110143904.png]]
+
+#### Yang sekarang dipake
+
+**MPLS**
+![[Pasted image 20250110143954.png]]
+
+**SD-WAN (Software-Defined Area Network)**
+- PENTING NIH, DIPAKE SKRNG
+![[Pasted image 20250110144048.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
