@@ -1437,6 +1437,14 @@ Max 30 Hops.
 ### SSH and Telnet
 ![[Pasted image 20250106151213.png]]
 
+SSH Should not be considered secure, karena CIA bisa decrypt SSH.
+
+![[Pasted image 20250109235956.png]]
+
+Regular FTP is like Telnet for SSH. Regular FTP is not secure, even for internal. Use **SFTP** or **FTPS**.
+
+### Email Protocols
+![[Pasted image 20250110000118.png]]
 
 
 
