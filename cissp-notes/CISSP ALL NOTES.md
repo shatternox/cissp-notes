@@ -1530,6 +1530,104 @@ SVC gk selalu up.
 - PENTING NIH, DIPAKE SKRNG
 ![[Pasted image 20250110144048.png]]
 
+**SDLC, HDLC**
+![[Pasted image 20250110172140.png]]
+
+**DNP3**
+![[Pasted image 20250110172218.png]]
+
+**SAN (Storage Area Network) and VoIP Protocols**
+![[Pasted image 20250110172309.png]]
+
+VSAN mirip VLAN, kita segment network.
+
+![[Pasted image 20250110172413.png]]
+
+![[Pasted image 20250110172456.png]]
+VoIP itu pake UDP. Sama kyk nonton video, lose packet dikit-dikit no worries.
+
+VoIP bisa dipake buat text messages, video, phone calls. jadi gk cuma phone calls.
+
+Cheaper and easier to implement, but then segala yang connect ke internet itu gk secure.
+
+![[Pasted image 20250110172736.png]]
+Backup if internet mati. Makannya harus sedia Analog Phone.
+
+VoIP Protocols ada SIP (Session Initiation Protocol), H.323, MGCP, RTP, RTCP, etc.
+
+SD-WAN itu bagian dari SDN.
+
+![[Pasted image 20250110172922.png]]
+
+![[Pasted image 20250110173053.png]]
+Star most commond for enterprise, bukan Mesh. Karena Mesh kemahalan to implement. Butuh banyak network card and cables.
+
+![[Pasted image 20250110173138.png]]
+Disadvantage utama dari fiber optic adalah harganya. Setelahnya baru Gampang rusak, susah to install and gk flexible.
+
+## WLAN (Wireless LAN) - WiFi
+![[Pasted image 20250110173226.png]]
+
+Most of the modern WLAN are based on IEEE 802.11
+
+![[Pasted image 20250112170137.png]]
+![[Pasted image 20250112170614.png]]
+
+2.4ghz lebih banyak dipake.
+5ghz band lebih jarang.
+
+![[Pasted image 20250112170746.png]]
+![[Pasted image 20250112170902.png]]
+
+Paling commong sekarang 802.11ac. ax itu bedanya gk jaduh sama ac dan lebih mahal. Jadi blom waktunya ganti.
+
+#### PENTING, BEDANYA 2.4GHZ TO 5GHZ
+![[Pasted image 20250112171016.png]]
+2.4ghz itu default in most cases. Jadinya suka crowded. Semuanya pake frekuensi itu.
+
+5Ghz lebih less crowded. Bahkan sekarang 6GHz udah ada, lebih gk crowded lagi.
+
+**2.4ghz juga much slower dari pada 5ghz.**
+
+**2.4ghz tapi better coverage, it goes through concrete better. kalo 5ghz jaraknya gk sejauh itu dan lebih sulit nembus tembok. 6ghz sama juga, lebih kecil coveragenya dari 5ghz tapi lebih cepet.**
+
+![[Pasted image 20250112171354.png]]
+
+1 Access point can have multiple SSID (Nama Wifinya, Service Set Identifier).
+
+![[Pasted image 20250112171454.png]]
+
+**SS vs SSID**
+![[Pasted image 20250112171529.png]]
+
+SS -> Devices dalam 1 network wifi itu
+SSID -> Nama wifinya.
+
+**WEP, (Wired Equivalent Privacy) - Gk secure**
+![[Pasted image 20250112171625.png]]
+
+WPA2 dan WPA3 adalah standar sekarang.
+
+![[Pasted image 20250112171654.png]]
+
+Yang recommended sekarang itu WPA3.
+
+WPA1 --> Pake RC4 dan TKIP, udah gk secure
+WPA2 --> Paling banyak dipake, masih secure asal pake AES. Kalo diset pake TKIP gk secure. Pake pre-set key.
+WPA3 --> 2020, Stronger, pake Simultaneous Authentication of Equals (SAE). Pake AES-256 in GCP mode with SHA-384 as HMAC. Segala data yang disent dari access point itu encrypted with a specific key yang cuma kita yang bisa decrypt.  
+
+WPA bisa ada account lockout buat mencegah brute-force
+
+### Bluetooth
+![[Pasted image 20250112172034.png]]
+Short-rage. Pake 2.4Ghz. PAN (Personal Area Network)
+
+
+
+
+
+
+
 
 
 
