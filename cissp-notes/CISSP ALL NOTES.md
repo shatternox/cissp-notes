@@ -1622,22 +1622,33 @@ WPA bisa ada account lockout buat mencegah brute-force
 ![[Pasted image 20250112172034.png]]
 Short-rage. Pake 2.4Ghz. PAN (Personal Area Network)
 
+Bluetooth bisa menjanggau 100 meters kalo Class 1.
 
+![[Pasted image 20250113012218.png]]
+![[Pasted image 20250113012241.png]]
 
+## Wireless Network
+![[Pasted image 20250113012451.png]]
 
+Li-Fi -> Pake Cahaya. 100 Gigabits. And it can use different types of light to send reasonably fast internet.
 
+Zigbee -> Personal Area Network range. 10-100m. Low speed.
 
+![[Pasted image 20250113012611.png]]
 
+### Cellular Network
+![[Pasted image 20250113012737.png]]
+![[Pasted image 20250113012814.png]]
 
+Range 5G itu gk terlalu jauh. Cuma 500meter dari antena coveragenya.. baru tw. Kyk yg wifi, lebih kecil coveragenya tapi lebih cepat.
 
+Gila 4G 10 miles radius.
 
-
-
-
-
-
-
-
+![[Pasted image 20250113013021.png]]
+Li-Fi most secure karena pake cahaya.
+![[Pasted image 20250113013113.png]]
+Ini harus cek tabel sih. Keknya harus diafal.
+![[Pasted image 20250113013212.png]]
 
 
 
