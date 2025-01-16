@@ -1686,33 +1686,56 @@ VXLAN itu buat yg besar bgt, kyk AWS, Google, Azure, etc.
 ![[Pasted image 20250115151806.png]]
 ![[Pasted image 20250115151952.png]]
 
+## Firewalls
+
+##### Packet Filtering Firewalls
+![[Pasted image 20250116213145.png]]
+
+##### Stateful filtering firewalls
+![[Pasted image 20250116221019.png]]
+--> Kalo connection udah established, jadi allowed.
+
+So in my example here, I have an internal workstation with the IP of 100.1.1.1 going to an external web server, since it's accessing the web server on Port 443, or Https. Well then the connection is allowed. Once that connection is established, the firewall writes a state table entry saying that that socket pair, meaning those source and destination IPs and ports are allowed to communicate with each other.
+
+So when the actual web server sends traffic back, it's allowed through the firewall because we establish that session.
+
+Bisa di DoS.
+
+##### Proxy Server, Application Firewall, Network Firewall, Host-based Firewall
+![[Pasted image 20250116223822.png]]
+
+WAF, layer 7.
+
+##### Next Generation Firewall (NGFW)
+![[Pasted image 20250116224021.png]]
+Ada deep packet inspection (IDS/IPS)
+
+##### Bastion Host and Dual-Homed Host
+![[Pasted image 20250116224100.png]]
+
+![[Pasted image 20250116225548.png]]
+
+![[Pasted image 20250116225625.png]]
+
+Firewall kalo bisa internal dan external beda merek. Misalnya depannya Cisco, dalamnya Juniper. Jadi kalau ada CVE di yang 1, gk jebol semua.
+
+![[Pasted image 20250116225721.png]]
+
+### Modem (Modulator / Demodulator)
+![[Pasted image 20250116225817.png]]
+
+![[Pasted image 20250116231136.png]]
+DTE dan DCE (Modem) itu jaman dulu. Jaman dulu mesti make 2 kotak, DTE dan DCEnya.
+
+![[Pasted image 20250116231410.png]]
+
+Fail-secure --> Meskipun dia fail, tetep secure. Contoh: Firewall, kalo rusak, langsung deny all traffic. Meskipun rusak, kita tetep secure.
+
+**Fail-secure** is a design principle for systems and devices that ensures security is maintained in the event of a failure or malfunction
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Securing Data In Motion
+![[Pasted image 20250116231655.png]]
 
 
 
