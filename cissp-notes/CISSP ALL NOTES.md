@@ -1650,26 +1650,41 @@ Li-Fi most secure karena pake cahaya.
 Ini harus cek tabel sih. Keknya harus diafal.
 ![[Pasted image 20250113013212.png]]
 
+### L1 - L3 Networking Devices on OSI Model
+![[Pasted image 20250113113434.png]]
+![[Pasted image 20250113113543.png]]
+
+**Inget, some switches can use IP (L3 Switch).**
+
+![[Pasted image 20250113113759.png]]
+![[Pasted image 20250114143017.png]]
+VXLAN itu buat yg besar bgt, kyk AWS, Google, Azure, etc.
+
+![[Pasted image 20250114143057.png]]
+
+![[Pasted image 20250114143240.png]]
+
+### Layer 3 Routing Protocol
+![[Pasted image 20250114143535.png]]
+![[Pasted image 20250115132239.png]]
+**Distance vector routing protocols (cuma calculate jarak, gk itung bandwidth):**
+- RIP --> Cuma ambil jarak terdekat. Hop terdikit. Tapi gk efektif karena gk ngitung bandwidthnya.
+
+![[Pasted image 20250115132355.png]]
+
+![[Pasted image 20250115132506.png]]
+**Link-state routing protocols (memperhitungkan jarak dan bandwidth juga, jadi lebih akurat):**
+- OSPF
+- BGP (Border Gateway Protocol) --> ISP sekarang mostly pake ini
+![[Pasted image 20250115132651.png]]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Network Performance and Traffic Management
+![[Pasted image 20250115151437.png]]
+![[Pasted image 20250115151501.png]]
+![[Pasted image 20250115151644.png]]
+![[Pasted image 20250115151806.png]]
+![[Pasted image 20250115151952.png]]
 
 
 
