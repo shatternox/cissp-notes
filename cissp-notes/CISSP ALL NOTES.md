@@ -1736,6 +1736,200 @@ Fail-secure --> Meskipun dia fail, tetep secure. Contoh: Firewall, kalo rusak, l
 
 ## Securing Data In Motion
 ![[Pasted image 20250116231655.png]]
+PAP --> Kyk HTTP Basic Auth
+
+![[Pasted image 20250117011307.png]]
+CHAP --> Pake preshared password. Jadi gk disendthrough network, tapi masalahnya passwordnya distore dalam plaintext.
+
+
+EAP --> Extensible Authentication Protocol (Penting)
+
+![[Pasted image 20250117011342.png]]
+![[Pasted image 20250117011426.png]]
+
+SLIP and PPP
+![[Pasted image 20250117011545.png]]
+
+VPN
+![[Pasted image 20250117011555.png]]
+--> Awesome
+
+PPTP (Old, and have many issues, pake VPN aja) and L2TP (On Layer 2 of the OSI model)
+![[Pasted image 20250117011721.png]]
+
+#### IPSEC (PENTING FOR EXAM)
+![[Pasted image 20250117011738.png]]
+VPN pake IPSEC. IPSEC itu end to end encryption.
+
+**IPSEC is a set of protocols that provide a cryptographic layer to IP traffic, both for IPV4 and IPV6.**
+
+**On IPV4, it's something that's tagged onto the protocol. In IPV6, it's designed in.**
+
+**And one of the places where you might use IPsec would be when you use a VPN.**
+
+**SA (Security Association)** --> Simplex, one way. Used to negotiate ESP (Encapsulating Security Payload) or AH (Authentication Header)
+
+**ISAKMP (Internet Security and Key Management Protocol)** --> Manages SA creation process
+
+**Tunnel Mode --> Encrypt semuanya termasuk headernya** (MOST COMMON)
+**Transport Mode --> Cuma Encrypt dan authenticate payloadnya aja.**
+
+**IKE (Internet Key Exchange)** --> Negotiates the algorithm selection process. Negotioate the symmetric encryption and the Hash. Dia pilih yang paling cepet dan paling secure 
+
+![[Pasted image 20250117012229.png]]
+
+ISDN and DSL
+![[Pasted image 20250117012416.png]]
+
+**Callback and Caller ID**
+![[Pasted image 20250117012551.png]]
+![[Pasted image 20250117225029.png]]
+![[Pasted image 20250117225243.png]]
+Thin client, Zero client, Thick client
+
+Instant Messaging
+![[Pasted image 20250117225555.png]]
+
+Signal --> Salah satu most secure instant messaging app in regards collecting sensitive attachments and mining customer data.
+
+![[Pasted image 20250117225752.png]]
+
+![[Pasted image 20250117225939.png]]
+![[Pasted image 20250117230102.png]]
+
+
+# Domain 5  - IAM (Identity and Access Management)
+
+### Access Control
+![[Pasted image 20250117232642.png]]
+IAAA --> Identify, Authenticate, Authorize, and Accountable
+
+
+![[Pasted image 20250119020845.png]]
+
+Penting tuh something **you know (Type 1), you have (Type 2), dan you are (Type 3)**.
+
+### Type 1 Authentication - Something you know
+![[Pasted image 20250119021152.png]]
+--> Ini tipe yang paling lemah karena paling gampang dicompromise, e.g: Password.
+
+![[Pasted image 20250119024416.png]]
+- Password harus ada kapital, letter, special chars.
+- Password harus selalu dirotate.
+- Gk boleh pake 12-24 password sebelumnya at least.
+- Password ada expirynya.
+- Gk boleh ganti-ganti password terus menerus sampe bisa pake 12 password sebelumnya loll. Harus ada cooldown boleh ganti password at least 5 hari. Unless pwnya langsung jebol.
+
+![[Pasted image 20250119024556.png]]
+![[Pasted image 20250119024703.png]]
+![[Pasted image 20250119024744.png]]
+![[Pasted image 20250119024815.png]]
+**Clipping Levels** --> To prevent administrative overhead. (boleh multiple entry sebelum lockout, karena bisa aja typo. Misalnya maksimal 3-5x typo)
+
+![[Pasted image 20250119025021.png]]
+
+### Type 2 Authentication - Something you have (Possession factor)
+![[Pasted image 20250119025056.png]]
+![[Pasted image 20250119151058.png]]
+
+Singe-use password itu something you have, bukan you know.
+![[Pasted image 20250119151212.png]]
+![[Pasted image 20250119151314.png]]
+KlikBCA
+![[Pasted image 20250119151354.png]]
+MicroChip di-implant --> akan jadi popular beberapa tahun ke depan.
+
+### Type 2 Authentication - Something you are
+- Iris, biometrics, finger print, face.
+- Most secure, but most expensive. Iris scanner, fingerprint scanner, face scanner.
+
+![[Pasted image 20250119151450.png]]
+![[Pasted image 20250119151529.png]]
+--> Penting buat atur sensitivitynya.
+![[Pasted image 20250119151755.png]]
+Physiological --> Facial recognition, palm veins, hand geometry, etc.
+Behavioral --> How you walk, your signature, etc.
+
+Hati-hati di EU, privacynya by collecting biometrics.
+
+![[Pasted image 20250119151859.png]]
+Bahaya Biometrics --> If you lose it, you can't get a new one. Kalo muka lu diprint 3d, udah lah jebol. Kalo sidik jarilu dicuri, kacau. 
+
+![[Pasted image 20250119151955.png]]
+
+## Authorization
+--> Memberikan aksesnya.
+![[Pasted image 20250119152058.png]]
+--> Access controlnya, rolenya apa.
+![[Pasted image 20250119152133.png]]
+Discretionary access control (DAC) is ==a cybersecurity system that allows the **owner of an object to decide who can access** it and what they can do with it==. DAC is based on Access Control Lists (ACLs).
+
+DAC --> When availability is priorty
+
+
+**Mandatory Access Control (MAC**) is ==a security system that limits user access to data based on **predefined rules**==. It's used to protect sensitive information in environments that require a high level of security.
+
+MAC --> When Confidentiality is priority
+
+**RBAC (PENTING)**
+![[Pasted image 20250119215124.png]]
+--> Need-to-know
+
+**ABAC (Lebih secure, dan lebih granular, slowly moving to this dari RBAC)** 
+![[Pasted image 20250119215306.png]]
+--> Sama kyk RBAC tapi ada environmental conditions. 
+--> Policy based
+
+**Context-Based and Content-Based (bagian dari ABAC)**
+![[Pasted image 20250119215929.png]]
+
+## Accountability / Auditing
+![[Pasted image 20250119220039.png]]
+--> Non-repudiaton.
+
+### Access Control Systems
+![[Pasted image 20250119220153.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
