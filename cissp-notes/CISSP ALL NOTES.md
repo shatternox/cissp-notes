@@ -1889,55 +1889,122 @@ MAC --> When Confidentiality is priority
 
 ### Access Control Systems
 ![[Pasted image 20250119220153.png]]
+--> Paling sering pake RBAC
+--> The access control systems compare my credentials to an access control list.
+
+![[Pasted image 20250122203511.png]]
+![[Pasted image 20250122203613.png]]
+![[Pasted image 20250122203735.png]]
+OIDC, jgn diovercomplicate, ini literally protocol buat login pake identity provider aja kyk Okta, Facebook, Google, etc.
 
 
+### Policy Decision Points (PDP) and Policy Enforcement Points (PEP)
+![[Pasted image 20250122204412.png]]
+![[Pasted image 20250122204523.png]]
+![[Pasted image 20250122204537.png]]
 
 
+### Identity and Access Provisioning
+![[Pasted image 20250122205009.png]]
+Identities correspond to entities
+and identities consist of attributes;
+
+So the entity is a person. That ould be me, I am Thor; but I can have different identities (Kamu bisa student sekaligus alumni, karena sudah lulus.). Dan student punya banyak atribut, begitu juga alumni.
+
+![[Pasted image 20250122205226.png]]
+
+Identity management system itu penting. Bisa set if and then statement. Kalo udh inactive 30 hari lock, etc.
+
+![[Pasted image 20250122205410.png]]
+
+SSO --> Subset dari Federated Identity Management.
+
+In the context of **Identity and Access Management (IAM)** and **access control**, "federated" refers to the concept of **federated identity**, **which enables users to access multiple systems, applications, or services across organizational or trust boundaries using a single set of credentials.**
+
+![[Pasted image 20250122205629.png]]
+
+Hati hati, SSO dan Super sign-on itu single point of failure. Sekalinya credsnya jebol, semua sistem jebol.
+
+Makannya biasanya dikasih additional security, kyk harus MFA, sekaligus aplikasinya cuma bisa dikasih via internal network / VPN.
+
+![[Pasted image 20250122205858.png]]
+
+IDaaS (Identity as a Service).
+
+![[Pasted image 20250122205954.png]]
+
+Manual provisioning is Bad. Automated is better.
+
+![[Pasted image 20250122210046.png]]
+
+Ingat. Usernya itu Entities. Entities itu punya beberapa Identities (Role nya). Identitiesnya atau setiap role itu punya beberapa atribut.
+
+![[Pasted image 20250122210310.png]]
+
+### Authentication Protocol - Access Control
+![[Pasted image 20250122210341.png]]
+
+**How Kerberos Work**
+![[Pasted image 20250127011734.png]]
+![[Pasted image 20250127011842.png]]
+
+**RADIUS** 
+![[Pasted image 20250127011924.png]]
+--> Mayan terkenal.
+
+![[Pasted image 20250127012023.png]]
+
+TACACS
+--> Old gk secure, karena reuse password.
+--> TACACS+ more secure
+![[Pasted image 20250127012049.png]]
+
+PAP --> Gk secure, password disend di plaintext
+CHAP juga sama.
+![[Pasted image 20250127012133.png]]
+
+Active Directory
+![[Pasted image 20250127012234.png]]
+![[Pasted image 20250127012412.png]]
+
+Which type of authentication is the WORST to have compromised, because **we are unable to reissue it**? **TYPE 3**
+
+Type 3 Authentication, which involves something you are, such as biometrics, is unique because it uses physical or behavioral characteristics that are intrinsic to an individual and cannot be easily changed. These characteristics include fingerprints, facial recognition, retina scans, voice patterns, and other biometric data. The incorrect answers: Type 1: Something you know, typically refers to passwords, PINs, or patterns. If compromised, while problematic, they can be reissued or changed. Type 2: Something you have, like a security token or an access card, can be replaced if compromised. Type 4: This is not commonly defined in the context of authentication factors. Authentication is typically described in terms of three types.
+
+**Type 1 = Something you know**
+**Type 2 = Something you have**
+**Type 3 = Something you are**
+
+===
+
+CHAP --> It stores client passwords on the server, they are never sent over the network. Dia kalo send gk plaintext, tapi hashed form of the password. This can be a security risk because if an attacker gains access to the server, they may use these stored credentials to perform offline attacks and potentially compromise user accounts.
+
+Access Card --> Magnetic Stripes
+
+![[Pasted image 20250127142819.png]]
+
+**CRR** is not a standard term associated with Type 3 authentication, which refers to **biometric authentication** methods (something you are). CRR does not correspond to a commonly recognized metric or term in the context of biometric authentication systems. 
+
+The incorrect answers: FAR stands for False Acceptance Rate, which is a measure of the likelihood that a biometric security system will incorrectly accept an unauthorized user's access attempt. It is a key metric used to evaluate the performance of biometric systems. CER stands for Crossover Error Rate, which is the point where the false acceptance rate (FAR) and false rejection rate (FRR) are equal. It is often used as a standard metric to compare the performance of different biometric systems. FRR stands for False Rejection Rate, which is a measure of the likelihood that a biometric system will incorrectly reject an authorized user's access attempt. It is another important metric used to assess biometric system performance.
+
+![[Pasted image 20250127143417.png]]
+![[Pasted image 20250127143552.png]]
+
+AD Trust
+![[Pasted image 20250127144919.png]]
+
+Clipping Levels --> Nambahin incorrect password attempts. Tujuannya buat reduce administrative overhead.
+
+![[Pasted image 20250127145134.png]]
+RBAC itu authorization, buat identification.
 
 
+# Domain 6 - Security Assessment and Testing
 
+![[Pasted image 20250127160909.png]]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Security Asessments
+![[Pasted image 20250127161023.png]]
 
 
 
