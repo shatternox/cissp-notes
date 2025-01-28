@@ -2005,21 +2005,33 @@ RBAC itu authorization, buat identification.
 
 ### Security Asessments
 ![[Pasted image 20250127161023.png]]
+--> Security Assessment itu big picture, high-level. Check semua aspect. Apakah secara general kita secure apa ngga.
 
+-->  Controls, jgn diterapkan secara policy saja, tapi harus ada administrative dan technical policies juga.
 
+--> Have to make sure that stuff is really implemented dan harus ada backup plan.
 
+![[Pasted image 20250128120045.png]]
 
+### SOC 1 VS SOC2 VS SOC3 (IMPORTANT)
 
+SOC1 --> Focus on **financial reporting**.
+--> Type 1: design effectiveness. Type I is on a specific date. And it's the auditor's opinion on the design effectiveness of the controls they are auditing. It is a single point in time. (single point in time)
+--> Type 2: design and reporting effectiveness. Type II is the auditor's opinion on the design and reporting effectiveness of the controls they are auditing. And Type II is not a point in time. It covers a minimum of six months. (6 months)
 
+SOC2 (compliance) --> Focus on internal controls for **compliance and operations**.
+--> trust service criteria, Security, Availability, Processing Integrity, Confidetiality, and Privacy.
+--> Bisa dishare ke management tapi under strict NDA.
+--> Type 1: suitability of the design of controls (single point in time)
+--> Type 2: effectiveness of the controls. (6 months)
 
+![[Pasted image 20250128120546.png]]
 
+SOC3 --> **Public Facing Document**. Sama kyk SOC2, tapi lebih general dan less sensitive.
+![[Pasted image 20250128121031.png]]
 
-
-
-
-
-
-
+### Security Audit Logs
+![[Pasted image 20250128121144.png]]
 
 
 
