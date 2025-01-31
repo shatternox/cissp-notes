@@ -2032,46 +2032,106 @@ SOC3 --> **Public Facing Document**. Sama kyk SOC2, tapi lebih general dan less 
 
 ### Security Audit Logs
 ![[Pasted image 20250128121144.png]]
+--> Segala sistem harus generate logs, harus ada audit trail.
+--> Tapi log itu cuma detective control.
 
+![[Pasted image 20250128213350.png]]
+--> Log harus dikonfigurasi secara BENAR, kalo gk percuma, gk guna, kalau gk tau purpose lognya, for what?
 
+**Common issues in logs**
+![[Pasted image 20250128213610.png]]
 
+### Audit Strategies for Cloud and Hybrid Environments
+![[Pasted image 20250128213652.png]]
+![[Pasted image 20250128213818.png]]
+--> Even data di cloud, tetep kita yang tanggung jawab / liable atas data tersebut, karena kita yang memutuskan naro data di sana.
 
+![[Pasted image 20250128214438.png]]
 
+![[Pasted image 20250128215509.png]]
+![[Pasted image 20250128215608.png]]
 
+### Vulnerability Scanning / Testing Tools
+(Nessus)
+![[Pasted image 20250128215921.png]]
 
+### Penetration Testing
+![[Pasted image 20250128220210.png]]
 
+![[Pasted image 20250128220338.png]]
 
+![[Pasted image 20250128220409.png]]
 
+![[Pasted image 20250128220543.png]]
 
+![[Pasted image 20250128220655.png]]
 
+### Social Engineering
+![[Pasted image 20250128220811.png]]
 
+![[Pasted image 20250128223621.png]]
 
+Consensus --> Ikut-ikutan orang wkwkwk, bnyk yg kena, bnyk reviews, "harusnya legit nih"
+Scarcity --> ONLY 1 LEFT!
+Urgency --> Ofc, effective bgt ini, sense of urgency crazy.
+Familiarity --> Something that the victim really familiar with. Effective di inperson / vishing.
 
+### Penetration Testing Tools
+![[Pasted image 20250128223828.png]]
+![[Pasted image 20250128224040.png]]
+![[Pasted image 20250128224250.png]]
 
+### Software Testing
 
+Shift-left --> Security harus dipertimbangkan dari awal pembuatan dan design aplikasi, jangan hanya setelah aplikasinya jadi saja.
 
+![[Pasted image 20250128224515.png]]
+![[Pasted image 20250128224929.png]]
 
+**Unit Testing and Integration Testing**
+![[Pasted image 20250128225015.png]]
+Unit testing --> Test specific section of the code. Dalam OOP, testingnya di class level. Biasanya Testnya udah written by the dev (kyk waktu bikin smartcontract, ada testnya)
 
+Integration Testing --> Test integrasi between each components / modules.
 
+**Interface Testing and Operational Acceptance**
+![[Pasted image 20250128225157.png]]
 
+**Installation Testing and Regression Testing**
+![[Pasted image 20250128225259.png]]
 
+Installation Testing --> Test install di device customer, aman gk
+**Regression Testing** --> **Selalu dilakukan ketika ada update**. Cari kecacatan pada kode ketika ada update atau major changes. Fix old bugs, outdated features, degraded features, etc.
 
+**Fuzz Testing**
+![[Pasted image 20250128225541.png]]
+Fuzz Testing --> Input berbagai hal kgk jelas, cek apakah akan issue or crash.
 
+**All-Pairs Testing**
+![[Pasted image 20250128225608.png]]
 
+**Misuse Case Testing and Test Coverage Analysis**
+![[Pasted image 20250128225708.png]]
+Misuse Case Testing --> test, apa yang kira-kira attacker / user abnormal lakukan.
 
+![[Pasted image 20250128225745.png]]
 
+In which type of software testing do we progressively test **larger and larger groups of software components** until the software works as a whole? **Integration Testing**
 
+When we do our dynamic software testing, what are we testing? **Functionality of the Software**
 
+As part of our software testing, we are doing **static** software testing. What are we doing? Test without executing it (baca source-codenya)
 
+# Domain 7 - Security Operation
 
+![[Pasted image 20250129010243.png]]
 
+### Administrative Personnel Security Controls (Directive Controls) --> PENTING
 
-
-
-
-
-
-
+![[Pasted image 20250129010630.png]]
+Least privilege --> Minimum necessary access they need
+Need to know --> Even if you have access, you can only access the data IF only you need it.
+Separation of duties --> More than one individual for on single task. 4 Eye Check.
 
 
 
