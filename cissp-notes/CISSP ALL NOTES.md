@@ -2133,33 +2133,419 @@ Least privilege --> Minimum necessary access they need
 Need to know --> Even if you have access, you can only access the data IF only you need it.
 Separation of duties --> More than one individual for on single task. 4 Eye Check.
 
+![[Pasted image 20250201125938.png]]
+
+![[Pasted image 20250201130022.png]]
+
+![[Pasted image 20250201130211.png]]
+
+![[Pasted image 20250201130336.png]]
+
+### Digital Forensics
+![[Pasted image 20250201130634.png]]
+
+incident response != forensic 
+meskiput closely related.
+
+IR itu, how do you handle the incident.
+
+![[Pasted image 20250201143012.png]]
+Forensic Steps
+--> We would **identify** the potential evidence, we would **acquire** it, we would **analyze** it, and then we would make a **report**.
+
+![[Pasted image 20250201143145.png]]
+Evidence itu harus --> Accurate, Complete, Authentic, Convincing. and Admissible (valid).
+
+Mulai analisa dari yang volatile to the least volatile. Contoh volatile kyk memory. Why? Bisa hilang.
+
+So HDD or Memory duluan? jawabannya, memory.
+
+![[Pasted image 20250201143315.png]]
+
+![[Pasted image 20250201143437.png]]
+**Chain of Custody**.
+The **Chain of Custody** refers to the **documented process of handling evidence** to ensure its **integrity, authenticity, and admissibility** in legal or investigative proceedings. It provides a **chronological record** of how evidence was collected, handled, stored, and transferred.
+
+### **Chain of Custody Form Example**
+
+|Evidence ID|Description|Collected By|Date & Time|Transferred To|Purpose|
+|---|---|---|---|---|---|
+|001|Laptop (Dell)|John Doe|2025-01-29 14:30|Jane Smith|Digital Analysis|
+|002|USB Drive|Jane Smith|2025-01-29 15:00|Secure Storage|Evidence Storage|
+|003|Server Logs (disk img)|Jack Black|2025-01-29 16:00|Lab Technician|Forensic Imaging|
+
+![[Pasted image 20250201143554.png]]
+Artifacts. We need to preserve the artifact.
+
+Risk Management Framework --> NIST 800-53.
+
+#### Disk Forensics
+![[Pasted image 20250201143706.png]]
+
+![[Pasted image 20250201143815.png]]
+
+So, when we store our data, a cluster is the minimum size that can be allocated by the file system.
+
+**Slack space** is the unused space within a cluster that is allocated to a file but not fully utilized. --> Attacker bisa nyembunyiin malware di sini.
+
+**Cluster** is the smallest unit of storage space that a file system allocates for storing a file. It consists of one or more **sectors** (physical storage blocks) on a storage device.
+
+### Network Forensics, Embedded Devices, some analysis, Egress Monitoring, and E-discovery.
+
+![[Pasted image 20250201144113.png]]
+
+Log taro ke centralized server yang aksesnya limited, biar integrity logsnya terjaga dan tidak di tamper.
+
+![[Pasted image 20250201155133.png]]
+
+![[Pasted image 20250201155203.png]]
+
+![[Pasted image 20250201163939.png]]
+
+![[Pasted image 20250201164335.png]]
+
+### Incident Management
+![[Pasted image 20250201164647.png]]
+Incident Management --> Administrative Event.
+
+**General 3 classes of incident**
+- **Natural** --> Flood, hurricanes, floods
+- **Human** --> Insider threat, hacker, etc.
+- **Environmental** --> Ini bukan alam, tapi kyk power grid, internet connection, hardware failure, software flaws, the plumbing, the wall.
+
+Fire and Water --> Bisa aja diklasifikasi jadi natural, human, or environmental, tergantung penyebabnya.
+
+![[Pasted image 20250201164842.png]]
+**Event** --> Apa yang terjadi
+**Alert** --> Warnings, trigger.
+**Incident** --> Multiple **adverse events** happening in our system or network, often caused by people 
+**Problem** --> Incident with unknown cause
+
+![[Pasted image 20250201164946.png]]
+**Inconvenience** -->Issue, tapi gk parah-parah amat,
+**Emergency** (crisis) --> urgent, fix now, loss of life or money
+**Disaster** --> Entire facility is down for **24hr** or more.
+**Catastrophe** --> Our facility is destroyed.
 
 
+## Incident Management
+![[Pasted image 20250201165411.png]]
+1. **Preparation**
+2. **Detection** (Identification)
+3. **Response** (Containment)
+4. **Mitigration** (Eradication)
+5. **Reporting**
+6. **Recovery**
+7. **Remediation**
+8. **Lessons Learned** (Post-incident Activity, Post mortem, Reporting.)
 
+![[Pasted image 20250201165545.png]]
 
+![[Pasted image 20250201171553.png]]
 
+![[Pasted image 20250201171700.png]]
 
+![[Pasted image 20250201171758.png]]
 
+![[Pasted image 20250201171854.png]]
 
+![[Pasted image 20250201171954.png]]
 
+![[Pasted image 20250201172111.png]]
+### Preventive and Detective Controls (IDS IPS)
+![[Pasted image 20250201172433.png]]
+Network-based --> Dia ada di network segment
+Host-based --> Dia ada dalam 1 host (1 workstation)
 
+**Signature approach (Faster)** --> Matching patterns or IOC. Completely vulnerable to a zero-day attack. Dan harus selalu diupdate.
 
+**Heuristic-based approach (Behavioral**, Slower, banyak false-positive) --> User normal traffic pattern to analyse abnormal traffic. Harus selalu ditweaking.
 
+Hybrid based --> Sekarang banyak pake ini.
 
+![[Pasted image 20250202225014.png]]
+![[Pasted image 20250202225035.png]]
+![[Pasted image 20250202225140.png]]
 
+**Cara TA bypass IDS/IPS.**
+![[Pasted image 20250202225256.png]]
 
+Event Types
+![[Pasted image 20250202225408.png]]
+True Positive --> Beneran Positive
+True Negative --> Beneran Negative
+False Positive --> Ngaco, dicap positive, tapi no attack
+False Negative --> Ngaco, ada attack, tapi kgk dicap.
 
+### SIEM and SOAR
+![[Pasted image 20250202225610.png]]
 
+### Application Positive-listing (Whitelist aplikasi-aplikasi yang diperbolehkan)
+![[Pasted image 20250202230022.png]]
+- White-listing is always good. Better approach, easily to manage.
+- Removable Media Controls --> USB Ports / CD policy and controls. Block USB or allow USB sebentara.
+### Honeynets and Honeypot
+Honeypot --> 1 System
+Honeynet --> Entire network of honeypot, beneran real simulated network. **Highest level of honeypot deployment**.
 
+**And the difference between honeynets and honeypots is really just that a honeypot is a single system where a honeynet is a network of them.**
 
+![[Pasted image 20250202230211.png]]
 
+**Honeypot** (Single System) --> You know, purposedly appealing dan vulnerable, buat dieksploit untuk kita pelajari pattern attacker to improve our system. Tapi bagaimana kalau Honeypot yang dieksploit  dipakai untuk menyerang company lain? Siapa yang salah? OFC kita yang liable. Makannya itu Senior management harus tau risknya dan harus setuju.
 
+![[Pasted image 20250202230346.png]]
 
+**Honeynet** (Network, full system, Highest level of honeypot deployment) --> Sama aja kyk honeypot, tapi proper infra, jadi ada bnyk host, bnyk honeypot, jadi kyk 1 infrastruktur untuk honeypot.
 
+![[Pasted image 20250202230649.png]]
 
+Tujuan utama honeypot --> Gather information from attacker.
 
+### Configuration Management
+IT System and Network
+![[Pasted image 20250202230910.png]]
+List yang harus dilakukan untuk hardening / config system yang baru aja dibeli / mau diimplementasi. (Server, system, network)
 
+![[Pasted image 20250205221330.png]]
 
+### Patch Management
+--> Regularly patch system on regular basis.
+--> Patch = corrective control, membenarkan sesuatu yang rusak.
+--> Biasanya dilakukan malam, di luar jam operasional.
+--> Patch harus dideploy di test environment dulu buat ditest, baru prod.
+![[Pasted image 20250205221512.png]]
+--> Patch management harus goes through change management dulu. And patch management is also something that needs to go through change management.
+
+**Any change we make to our systems goes through change management.**
+
+![[Pasted image 20250205221745.png]]
+
+### Change Management (PENTING)
+![[Pasted image 20250205221938.png]]
+"We have our formalized change management process where we go in and justify the why, where, when, how, for all the changes we want to make."
+
+- Setiap perubahan harus dilakukan flow ini dulu, dan ditentukan what when who how whynya, agar memastikan gk rusak ketika dilakukan perubahan. Sekaligus buat audit trail also.
+
+![[Pasted image 20250205222113.png]]
+
+Change management Flow
+![[Pasted image 20250205222126.png]]
+
+There are two terms here that I think is important for you to understand and understand the differences between them.
+
+It's **change management** and **change control**.
+
+Change management is everything, the entire process. And if you're familiar with project management terms, that would be the entire project:
+
+**Initiation, Planning, Executing Monitoring Control and Closing.**
+
+And we will touch more on project management later.
+
+Change control on the other hand is the parts **where we control the change**.
+
+![[Pasted image 20250205222328.png]]
+
+PDCA --> Plan do Check Act
+
+### 0-day Vulnerabilities
+![[Pasted image 20250205222359.png]]
+![[Pasted image 20250205223008.png]]
+
+## Backups (RAID, Redundancy, Fault Tolerance)
+
+**Archive bit --> That is the little flag that tells us something was changed since the last full or incremental backup.**
+
+![[Pasted image 20250205223607.png]]
+- Orang biasanya setelah bikin backup dibiarin gitu aja. Main ditinggalin karena "yang penting udah ada backup". Forget it mentality.
+- Backup harus selalu coba direstore untuk memastikan backupnya bekerja dan gk rusak, dan data yang dibackup sesuai.
+
+**Types of Backup**
+- **Full backup**. Here, we backup everything.
+- **Incremental backup**. Here, we back up what was changed since the last backup.
+- **Differential backup.** Here, we back up everything that was changed since the last full backup.
+- **Copy Backup**. And a copy backup is exactly the same as a full backup. We back up everything, but we do not clear the archive bit or the flag.
+
+Setiap regulations kyk PCI-DSS punya syarat-syarat backup retention minimal berapa lama.
+
+**Full Backup**
+![[Pasted image 20250205230349.png]]
+
+**Incremental Backup (Cuma backup yang baru aja)**
+![[Pasted image 20250205230430.png]]
+Pertama full backup, lalu backup yang baru berubah aja.
+
+**Differential Backup**
+![[Pasted image 20250205230502.png]]
+Backup semua dari terakhir full-backup.
+
+![[Pasted image 20250205230606.png]]
+
+### RAID (Redundant Array of Independent/Inexpensive Disks)
+![[Pasted image 20250205230823.png]]
+--> RAID itu intinya backup paralel, jadi 1 disk rusak, bisa langsung pake disk 2. Jadinya kyk live backup (Disk mirroring --> Tapi ini slower)
+--> Disk stripping --> Across multiple disk.
+
+![[Pasted image 20250205230937.png]]
+RAID 0 
+RAID 1 
+
+![[Pasted image 20250205231003.png]]
+RAID 5 --> Paling banyak dipakai.
+
+### Redudancy
+![[Pasted image 20250205231158.png]]
+Hardware yg kyk ada moving part pasti break easily --> HDD (ada spinning disk), Fan, etc. Makannya beter pake SSD.
+
+![[Pasted image 20250205231622.png]]
+![[Pasted image 20250205231802.png]]
+**Database Shadowing** --> Exact copy of the DB or files to another location. Bisa di disk berbeda dalam 1 server, tapi best practicenya bener-bener beda geographical location.
+
+**Electronic Vaulting (E-Vaulting)** --> Remote backup service. Backup dikirim **offsite** (offsite location, kuncinya ini) tiap beberapa interval atau setiap ada perubahan
+
+**Remote Journaling** --> Sends transaction logs ke remote server, tapi gk send filenya, cuma transaction log aja. Transactionnya bisa direbuilt dari log, jika kita kehilangan original files.
+
+![[Pasted image 20250205232333.png]]
+CPU commonly gk redundant.
+
+**RAID, Disk Stripping --> MINIMAL 2 DISK**
+![[Pasted image 20250205232418.png]]
+
+## BCP (Business Continuity Plan) and DRP (Disaster Recovery Plan)
+![[Pasted image 20250207180726.png]]
+
+BCP contains COOP (Continuity of Operations Plan), DRP (Disaster Recovery Plan), Crisis Communication Plan, Critical Infrastructure Protection Plan, Cyber Incident Response Plan, Information System Contingency Plan (ISCP), Occupant Emergency Plan, etc.
+
+Jadi, BCP itu high-levelnya.
+
+![[Pasted image 20250207180926.png]]
+
+![[Pasted image 20250207181253.png]]
+![[Pasted image 20250208105128.png]]
+
+Errors and Omissions --> Most common type of disruptive event. Since it is errors and omissions, that means these are internal employees. **An error is a mistake, and omission is not doing something**.
+
+Omission --> Tidak melakukan sesuatu secara proper. Misalnya sengaja gk kunci pintu server karena malas buka lagi (melanggar security protocol), jadinya server kecolongan. (Contoh kyk gini bisa ditanggulangi dengan membunyikan alarm kalo pintu gk terkunci lebih dari 10  detik.)
+
+![[Pasted image 20250208105436.png]]
+
+### Warfare, Terrorism, Sasbotage, and Ransomware
+![[Pasted image 20250208105731.png]]
+![[Pasted image 20250208110134.png]]
+
+### Personnel Shortages (Human/Nature/Enviromental)
+![[Pasted image 20250208110352.png]]
+Kalo karena pandemi, staff kita sisa 10% doang, apa yang akan terjadi dengan bisnis kita?
+--> Hire more staff
+--> Cross train staff, jadinya 1 staff bisa handle multiple jobs.
+
+### DRP Basics
+![[Pasted image 20250208110738.png]]
+![[Pasted image 20250208110859.png]]
+![[Pasted image 20250208110954.png]]
+
+### Developing BCP and DRP
+![[Pasted image 20250208111107.png]]
+![[Pasted image 20250208111927.png]]
+![[Pasted image 20250208112127.png]]
+Call tree is important during incident so we know who to contact.
+
+### BIA (Business Impact Analysis) - Important
+![[Pasted image 20250208112338.png]]
+--> We analyze the impact on our business.
+--> Misal, kita bisa punya 100% availability dengan ada backup sites 1:1 di location lain, tapi itu bakal cost kyk $40M, gk ada budget segitu buat security doang. Jadi okelah gpp kita accep 30mnt - 1jam downtime, tapi asal costnya lebih rendah.
+--> Setelah budget dan acceptancenya dapat, baru kita bikin BIAnya dan Plannya.
+
+It is also possible that we have a function or a system that has to be considered critical because it's dictated by law. That could be patient records.
+
+Patient records have to be accessible 24/7/365. Because if patient records are not accessible to medical staff, people might die.
+
+![[Pasted image 20250208113611.png]]
+![[Pasted image 20250208113732.png]]
+![[Pasted image 20250208113837.png]]
+
+![[Pasted image 20250208113954.png]]
+HUMAN IS ALWAYS THE HIGHEST PRIORITY.
+
+![[Pasted image 20250208114044.png]]
+KEY ELEMENT OF DRP IS BACKUP.
+
+![[Pasted image 20250208114107.png]]
+LEGAL AND REGULATORY IS NOT KEY COMPONENT FOR BCP
+
+### Recovery Strategy - Supply and Infrastructure Redundancy
+![[Pasted image 20250209135942.png]]
+
+UPS 1 and UPS 2 case
+![[Pasted image 20250209140223.png]]
+
+### Discover recovery Sites
+![[Pasted image 20250209140405.png]]
+![[Pasted image 20250209140552.png]]
+![[Pasted image 20250209140948.png]]
+**Redundant Site** --> 1:1 dengan site sekarang, kalo real site down, traffic langsung redirect ke redundant site. Paling mahal. Otomatis transfer traffic. **Instant recovery time**.
+
+**Hot Site** --> Sama kyk Redundant Site, tapi cuma ngebackup critical systems aja, jadi gk trully 1:1, tapi 1:1 buat critical system. Systemnya juga lowspec. Transfer traffic manual. **Less than an hour recovery time**.
+
+**Warm Site** --> Sama kyk hot site, tapi not with real or near-real time data backup. Smaller data centre. Transfer traffic manual. **4-24hrs Recovery Time**.
+
+**Cold Site** --> Cheapest, smaller full data center. Longest recovery Options, can be **weeks+ recovery time**.
+
+**Reciprocal Agreement Site** --> Contract with another organization. Kita nitip data dengan organization lain. Network completely segmented dari organization mereka.
+
+**Mobile Site** --> Mobile, bisa bergerak.
+
+**Subscription/Cloud Site** --> Pake cloud, paling terkenal sekarang. Cheap, easy to setup.
+
+### BCP Sub-plans
+![[Pasted image 20250209141107.png]]
+**Continuity of Operations Plan (COOP)** --> How to keep operating in a disaster. At least at minimum requirements.
+
+**Cyber Incident Response Plan** --> How we respond in cyber events
+
+**OEP (Occupant Emergency Plan)** --> How do we protect our facilities, staff, and the environment in a disaster event. Fire drill.
+
+![[Pasted image 20250209141631.png]]
+
+**Business Recovery Plan (BRP)** --> The Business Recovery Plan has all the steps that we need to do, all the things that we need to ensure are in place for us to get back to normal business operations after we have recovered from a disruptive event. And what that really means is we move the operations back from the disaster recovery site to our old primary site or to a new primary site. How do we switch over from limited capacity back to full operations?
+
+**Continuity of Support Plan** --> In the Continuity of Support Plan, we narrowly focus on the support of the IT systems and the applications that we are responsible for. This can also at times be called the IT Contingency Plan, but it is very narrowly focused on IT. How do we keep supporting the IT systems and applications that are critical? How do we make sure that the doctors that are still on the floor, treating patients, can access real-time patient records even if our data center is down or their email or whatever else they need to do, that for them is critical, so they cat do their job while we fix the IT back end.
+
+**The Crisis Management Plan (CMP)** --> Management site of thing
+
+![[Pasted image 20250209141948.png]]
+
+**Crisis Communication Plan** --> A subplan of the CMP
+
+![[Pasted image 20250209142016.png]]
+
+Call Trees.
+
+### Employee Redundancy
+![[Pasted image 20250209142310.png]]
+**Emergency Operations Center (EOC)** --> Temporary command and control facility responsible for our emergency management or disaster management function at a strategic level during an emergency.
+
+MOU / MOA. 
+
+![[Pasted image 20250209142538.png]]
+
+### Testing the Plans
+![[Pasted image 20250209142846.png]]
+![[Pasted image 20250209142948.png]]
+![[Pasted image 20250209143128.png]]
+
+**Training for the plans
+![[Pasted image 20250209143249.png]]
+![[Pasted image 20250209143438.png]]
+
+### What to do after Disruption (Lessons Learned)
+![[Pasted image 20250209143623.png]]
+![[Pasted image 20250209143701.png]]
+
+**BCP / DRP Frameworks**
+![[Pasted image 20250209143955.png]]
+
+# Domain 8 - Software Development Security
 
 
 
