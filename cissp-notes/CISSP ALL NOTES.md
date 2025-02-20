@@ -2546,6 +2546,528 @@ MOU / MOA.
 ![[Pasted image 20250209143955.png]]
 
 # Domain 8 - Software Development Security
+- Shift-left security.
+- Security sejak design aplikasi.
+- SAST
+- DAST
+- OWASP
+
+### Designing Security Into our Software
+![[Pasted image 20250216122356.png]]
+![[Pasted image 20250216122616.png]]
+
+### Programming Concept
+![[Pasted image 20250216122853.png]]
+![[Pasted image 20250216122938.png]]
+
+**Programming Generation, 4GL**
+![[Pasted image 20250216123011.png]]
+4th Gen itu ada drag and drop coding juga (logic apps)
+5th Gen itu computernya solve sendiri, pake AI
+
+![[Pasted image 20250216123446.png]]
+CAST --> 4th gen.
+
+![[Pasted image 20250216123710.png]]
+
+Top Down --> Design besar dulu, big picture dulu, baru fitur fitur kecil
+Bottop Up --> Fitur-fitur kecil dulu, baru ntar disambung sambungin. OOP.
+
+![[Pasted image 20250216123845.png]]
+![[Pasted image 20250216123938.png]]
+![[Pasted image 20250216124258.png]]
+
+### Software Development Methodologies
+- Project management
+- Waterfall (Very Linear, old, no longer used)
+![[Pasted image 20250216124519.png]]
+- Udah obsolete, better pake method baru seperti Agile, Scrupt, Sashimi, or Spiral.
+- Udh maju gk bisa mundur. Kalo ada teknologi baru, kita gk bisa implement karena kita udah maju, gk bisa balik ke design.
+
+![[Pasted image 20250216124723.png]]
+- Sashimi Model --> Sama kyk Waterfall, tapi bisa mundur, tapi mundurnya maksimal satu. Sama, masih terlalu kaku juga.
+- Agile --> Lebih flexible, lebih guna.
+
+![[Pasted image 20250216124832.png]]
+![[Pasted image 20250216125119.png]]
+
+### **Agile --> Scrum**
+![[Pasted image 20250216125148.png]]
+Kenapa standup meeting? Kita gk mau sambil duduk, gk mau meeting lama-lama, fokus kerja.
+
+![[Pasted image 20250216134119.png]]
+- Extreme Programming.
+
+![[Pasted image 20250216134151.png]]
+- Spiral Mode
+
+![[Pasted image 20250216134238.png]]
+- Rapid Application Development (RAD)
+	- Bikin MVP cek apakah sesuai yang customer mau apa ngga. kadang customer mau apa, ternyata setelah dia liat, dia gk mau.
+- Prototyping.
+
+
+### Software Development Lifecycle (SDLC)
+![[Pasted image 20250216134411.png]]
+![[Pasted image 20250216175659.png]]
+![[Pasted image 20250216175740.png]]
+![[Pasted image 20250216175902.png]]
+![[Pasted image 20250216180103.png]]
+![[Pasted image 20250216231537.png]]
+![[Pasted image 20250216231611.png]]
+![[Pasted image 20250216231655.png]]
+
+### DevOps and DevSecOps
+![[Pasted image 20250216231751.png]]
+DevOps --> Agile CI/CD
+DevSecOps --> Integrate security to the DevSecOps process. SAST, DAST.
+
+![[Pasted image 20250216231944.png]]
+![[Pasted image 20250216232004.png]]
+
+### Scaled Agile Frameworks (SAFe)
+![[Pasted image 20250216232031.png]]
+![[Pasted image 20250216232102.png]]
+![[Pasted image 20250216232156.png]]
+![[Pasted image 20250216232240.png]]
+![[Pasted image 20250216232342.png]]
+![[Pasted image 20250216232431.png]]
+
+## Databases
+![[Pasted image 20250216232626.png]]
+--> Relational Databases (RDS) paling sering dan common dipake.
+
+![[Pasted image 20250216232759.png]]
+- DBMS (Database Management System) --> MySQL, PostgreSQL, MongoDB, MariaDB, Microsoft SQL Server, Oracle, Sybase, SAP HANA, SQLite, and IBM DB2
+
+![[Pasted image 20250216232745.png]]
+
+**Relational DB**
+![[Pasted image 20250216232857.png]]
+- Column and Row
+- Harus ada unique identifier. ID.
+
+**Database Integrity**
+
+![[Pasted image 20250216233027.png]]
+Integrity di DB itu sangat important.
+
+![[Pasted image 20250216233343.png]]
+![[Pasted image 20250217224827.png]]
+![[Pasted image 20250217224933.png]]
+![[Pasted image 20250217225121.png]]
+
+**Database Query Language**
+![[Pasted image 20250217225229.png]]
+- **Data Definition Language (DDL)** --> Ini yang buat ke databasenya. **CREATE, ALTER, DROP**.
+- **Data Manipulation Language (DML)** --> Ini yang buat ke table / columnnya. **SELECT, DELETE, INSERT, UPDATE**.
+
+![[Pasted image 20250217225410.png]]
+![[Pasted image 20250217225649.png]]
+![[Pasted image 20250217225737.png]]
+- **Database Shadowing** --> Exact realtime copy of a DB.
+- **Electronic Vaultiing (E-Vault)** --> Remote backup, sent off site electronically at a certain internal.
+- **Remote Journaling** --> Only set the transaction log to a remote location. Transaction logs are used to rebuild the original files.
+
+![[Pasted image 20250217225854.png]]
+- **Coupling** --> Coupling is the interdependence between the software modules and it measures how closely connected routines and modules are.
+- **Cohesion** --> How much the elements inside the module belongs together.
+
+Low Coupling == High Cohesion
+Low Cohesion == High Coupling 
+
+**And really what we want here is high cohesion and low coupling.**
+--> Tanda well-structured computer system and good design. High readability and maintainibility.
+
+![[Pasted image 20250217230146.png]]
+- **Object Request Broker (ORB)**
+	- COM
+	- DCOM
+	- CORBA (OOP)
+
+![[Pasted image 20250217230218.png]]
+![[Pasted image 20250217230241.png]]
+
+![[Pasted image 20250217230305.png]]
+- **Object-Oriented Analysis and Design (OOAD)**
+	- OOA --> Analysis
+	- OOD --> Design 
+	- OOM --> Modeling
+
+![[Pasted image 20250217230344.png]]
+
+**Database Characteristic (ACID)**
+- ACID Model (Atomicity, Consistency, Isolation, and Durability)
+![[Pasted image 20250217230549.png]]
+
+## OWASP Top 10
+[OWASP Top Ten | OWASP Foundation](https://owasp.org/www-project-top-ten/)
+![[Pasted image 20250217230915.png]]
+
+**A01:2021 - Broken Access Control**
+![[Pasted image 20250218222154.png]]
+
+**A02:2021 - Cryptographic Failures**
+![[Pasted image 20250218222308.png]]
+
+**A03:2021 - Injection**
+![[Pasted image 20250218222419.png]]
+- Improper input validation
+
+**A04:2021 - Insecure Design**
+![[Pasted image 20250218222534.png]]
+- Design securitynya jelek dan lemah.
+- Logicnya cacat.
+- Security harus diimplementasi dari step design aplikasi.
+
+**A05:2021 - Security Misconfiguration**
+![[Pasted image 20250218222626.png]]
+- Literally misconfig, default creds lupa diganti, ada open ports, ada open restricted page, ada environment file keupload.
+
+**A06:2021 - Vulnerable and Outdated Components**
+![[Pasted image 20250218222723.png]]
+- Literally outdated library, outdated software.
+- Need a proper patch management.
+
+**A07:2021 - Identification and Authentication Failures**
+![[Pasted image 20250218222818.png]]
+- In 2017, it was broken authentication.
+- In 2013, it was broken authentication and session management.
+- **Intinya kyk session misconfiguration. No session timeout, no session destroy, predictable session id, unencrypted session (send in cleartext), etc.**
+- Weak/default passwords juga masuk sini. 
+- User gampang lupa password, jadi pake password gampang.
+- Password distore dalam plaintext.
+
+**A08:2021 - Software and Data Integrity Failures**
+![[Pasted image 20250218225837.png]]
+- Make plugin, extension, modules, libraries dari untrusted source.
+- Insecure CI/CD pipelines or unverified updates
+- Software update without enough integrity checks
+- Jangan biarin software autoupdate, harus dicheck dan ditest dulu sebelum prod.
+
+**A9:2021 - Security Logging and Monitoring Failures**
+![[Pasted image 20250218230021.png]]
+- Logging cacat, gk semua kelog.
+- Log gk bisa proof ada attack. Attack goes unnoticed.
+
+**A10:2021 - Server-Side Request Forgery**
+![[Pasted image 20250218230145.png]]
+- SSRF, Manfaatkan vulnerable server buat request ke dalam. Yang tadinya gk bisa dilakukan dari luar karena ada firewall, skrng jadi bisa karena ada server mereka yang vuln. Kontrol request dari server vulnerable.
+
+#### List yang gk make it to OWASP TOP 10 but still important
+![[Pasted image 20250218230346.png]]
+- **Insufficient Detection and Response** --> Nyambung ke insufficient logging and monitoring. Kalo logging monitoring cacad, gmn mau proper detection and response.
+- **Unvalidated Redirect and Forwarding** (open redirects)
+
+![[Pasted image 20250218230546.png]]
+- **Cross-site Request Forgery (CSRF)** --> Force user untuk melakukan action yang usernya tidak mau ketika usernya sudah authenticated. Biasanya pake phishing.
+
+![[Pasted image 20250218230559.png]]
+- **Cross-site scripting (XSS)**
+
+### Software Vulnerabilities and Attacks
+
+##### Buffer Overflows (Buffer Overrun)
+![[Pasted image 20250218230940.png]]
+
+##### Race Condition (Race Hazard) and Privilege Escalation
+![[Pasted image 20250219233932.png]]
+
+##### Backdoors and Ethical Disclosure
+![[Pasted image 20250219234039.png]]
+
+##### Security Orchestration, Automation, and Response (SOAR) and Operation and Maintenance
+![[Pasted image 20250219234123.png]]
+- **SOAR** --> Pake AI
+
+##### Integrated Development Environment (IDE) and Runtime
+![[Pasted image 20250219234223.png]]
+Runtime --> The amount of time when a program is running.
+
+Backdoor and Maintenance hook is okay pas development, karena memudahkan debugging.
+![[Pasted image 20250219234402.png]]
+
+
+### Maturity Models
+#### CMM (Capability Maturity Model) - Layer 1 -> Layer 5
+![[Pasted image 20250219234508.png]]
+Layer 1 --> ***Ad hoc*** --> When necessary or needed.
+
+![[Pasted image 20250219234624.png]]
+![[Pasted image 20250219234705.png]]
+Layer 5: Optimizing --> ada goals kita.
+
+#### CMMI (Capability Maturity Model Integration)
+![[Pasted image 20250219234813.png]]
+
+Process Area, Abbreviation, Category, and Maturity Level
+![[Pasted image 20250219234836.png]]
+
+#### Software Assurance Maturity Model (SAMM)
+https://owaspsamm.org/model/
+![[Pasted image 20250219235121.png]]
+![[Pasted image 20250220220757.png]]
+![[Pasted image 20250220220925.png]]
+![[Pasted image 20250220221018.png]]
+
+"possibly repeatable with consistent result" - Level 2
+![[Pasted image 20250220221221.png]]
+
+### Buying Software from other Companies
+![[Pasted image 20250220221355.png]]
+![[Pasted image 20250220221537.png]]
+![[Pasted image 20250220221806.png]]
+
+### Cloud Computing
+![[Pasted image 20250220221844.png]]
+![[Pasted image 20250220221941.png]]
+
+## Software Composition Analysis (SCA)
+![[Pasted image 20250220222215.png]]
+--> Biasa diintegrate ke CICD Pipeline.
+--> SCA akan seluruh library dan dependencies dari aplikasi / code.
+
+![[Pasted image 20250220222322.png]]
+![[Pasted image 20250220222442.png]]
+![[Pasted image 20250220222538.png]]
+
+## AI (Artificial Intelligence)
+![[Pasted image 20250220222656.png]]
+![[Pasted image 20250220222732.png]]
+![[Pasted image 20250220222740.png]]
+![[Pasted image 20250220222816.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
